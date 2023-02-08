@@ -65,10 +65,18 @@
         "on-click": "pavucontrol"
     },
     "temperature": {
-        "thermal-zone": 1,
-        "critical-threshold": 75,
-        "format-critical": " !{temperatureC}°C",
-        "format": " {temperatureC}°C"
+      "thermal-zone": 7,
+      "critical-threshold": 80,
+      "interval": 5,
+      "format": "{icon}  {temperatureC}°C",
+      "format-icons": [
+          "", // Icon: temperature-empty
+          "", // Icon: temperature-quarter
+          "", // Icon: temperature-half
+          "", // Icon: temperature-three-quarters
+          ""  // Icon: temperature-full
+      ],
+      "tooltip": true,
     },
     "backlight": {
         // "device": "acpi_video1",
