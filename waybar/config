@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "modules-left": ["cpu","custom/gpu-usage","memory","temperature"],
+    "modules-left": ["cpu","memory", "disk","temperature"],
     "modules-center": ["sway/workspaces", "wlr/workspaces"],
     "modules-right": ["tray","pulseaudio","bluetooth","network","battery","clock"],
     "sway/workspaces": {
@@ -9,6 +9,7 @@
         "all-outputs": true,
         "enable-bar-scroll": true,
         "format": "{index} {icon}",
+        "on-click": "activate",
         "persistent_workspaces": {
             /* "7": [],
             "10": " ",*/
@@ -29,8 +30,8 @@
     "wlr/workspaces": {
         "disable-scroll": false,
         "all-outputs": true,
-        "enable-bar-scroll": true,
         "format": "{icon}",
+        "on-click": "activate",
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
         "format-icons": {
@@ -47,10 +48,10 @@
         },
     },
     "clock": {
-        "format": " {:%a %m-%d %H:%M}",
-        "format-alt": "{:%Y-%m-%d}",
-        "tooltip": true,
-        "interval": 10,
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%m-%d %T}",
+        "format-alt": "{:%F %T}",
+        "interval": 1
     },
     "battery": {
         "states": {
@@ -66,24 +67,32 @@
         "format-icons": [" ", " ", " "],
     },
     "network": {
-        "format-wifi": " {essid} ",
-        "tooltip": false,
-        "format-ethernet": " {ipaddr}/{cidr}",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected",
-        "format-disabled": "Disabled",
+        "format": "{ifname}",
+        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-ethernet": " {ifname}",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format": " {ifname} via {gwaddr}",
+        "tooltip-format-wifi": " {ipaddr}/{cidr} ({signalStrength}%)",
+        "tooltip-format-ethernet": " {ipaddr}/{cidr}",
+        "tooltip-format-disconnected": "Disconnected",
         "on-click": "nm-connection-editor",
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "tooltip": true,
-        "format-muted": "婢 Muted" ,
-        "format-bluetooth": "{volume}%",
+        "format-bluetooth": " {icon} {volume}%",
+        "format-muted": "",
         "format-icons": {
-            "headphone": "",
-            "default": ["", "", ""],
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
         },
-        "on-click": "pavucontrol"
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"]
     },
     "temperature": {
       "thermal-zone": 7,
@@ -108,23 +117,24 @@
         "interval": 1,
         "format": " {usage}%",
     },
-    "custom/gpu-usage": {
-        "exec": "cat /sys/class/hwmon/hwmon8/device/gpu_busy_percent",
-        "format": " {}%",
-        "return-type": "",
-        "interval": 5,
-    },
     "memory": {
         "interval": 10,
-        "format": " {}%",
-        "max-length": 8,
+        "format": "{used:0.1f}G/{total:0.1f}G  "
     },
     "bluetooth": {
-        "format": "{icon}",
+        "format-off": " {status}",
+        "format": " {status}",
         "format-connected": " {device_alias}",
-        "tooltip": true,
-        "tooltip-format": "{status}",
-        "format-on": "",
-        "format-off": "",
+        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+    },
+    "disk": {
+        "interval": 10,
+        "format": "Disk {percentage_free}%",
+        "path": "/"
     }
 }

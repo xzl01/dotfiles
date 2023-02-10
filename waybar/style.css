@@ -40,7 +40,7 @@ window#waybar {
 	border-radius: 8px;
 }
 
-#clock, #tray, #battery, #pulseaudio, #network, #temperature,#cpu,#memory, #bluetooth {
+#disk, #clock, #tray, #battery, #pulseaudio, #network, #temperature,#cpu,#memory, #bluetooth {
 	margin-top: 3px;
 	margin-left: 3px;
 	padding: 0 6px;
@@ -50,7 +50,6 @@ window#waybar {
 }
 
 #network {
-	transition: none;
 	color: #161320;
 	background: #bd93f9;
 }
@@ -71,7 +70,7 @@ window#waybar {
 
 #battery.charging, #battery.plugged {
 	color: #161320;
-    background-color: #B5E8E0;
+    background: #B5E8E0;
 }
 
 #battery.critical:not(.charging) {
@@ -120,3 +119,7 @@ window#waybar {
 	background: #929320;
 }
 
+#disk {
+	color: #B5E8E0;
+	background: #928654;
+}
