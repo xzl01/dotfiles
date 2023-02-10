@@ -1,7 +1,7 @@
 * {
 	border: none;
 	border-radius: 8;
-    font-family: "Sarasa Mono SC Nerd";
+    font-family: "FiraCode Nerd Font";
 	font-size: 15px;
     font-weight: normal;
 	min-height: 10px;
@@ -11,8 +11,33 @@ window#waybar {
 	background: transparent;
 }
 
-window#waybar.hidden {
-	opacity: 0.2;
+#workspaces {
+	margin: 0px;
+	margin-left: 10px;
+	border-radius: 10px;
+}
+#workspaces button {
+    padding: 0 9px;
+    min-width: 40px;
+    border-top: 1px solid #373737;
+    border-bottom: 1px solid #373737;
+}
+
+#workspaces button.focused {
+    color: #7aa2f7;
+    border-top: 1px solid #7aa2f7;
+    border-bottom: 1px solid #7aa2f7;
+}
+
+#workspaces button.active {
+    color: #7aa2f7;
+    border-top: 1px solid #7aa2f7;
+    border-bottom: 1px solid #7aa2f7;
+}
+
+#workspaces button:hover {
+    background: transparent;
+	border-radius: 8px;
 }
 
 #clock, #tray, #battery, #pulseaudio, #network, #temperature,#cpu,#memory, #bluetooth {
