@@ -1,31 +1,22 @@
 {
-    "layer": "top",
-    "position": "top",
-    "modules-left": ["cpu","memory", "disk","temperature"],
-    "modules-center": ["sway/workspaces", "wlr/workspaces"],
-    "modules-right": ["tray","pulseaudio","bluetooth","network","battery","clock"],
-    "sway/workspaces": {
-        "disable-scroll": false,
-        "all-outputs": true,
-        "enable-bar-scroll": true,
-        "format": "{index} {icon}",
-        "on-click": "activate",
-        "persistent_workspaces": {
-            /* "7": [],
-            "10": " ",*/
-        },
-        "format-icons": {
-            "1": " ",
-            "2": " ",
-            "3": " ",
-            "4": " ",
-            "5": " ",
-            "6": " ",
-            "7": " ",
-            "8": " ",
-            "9": " ",
-            "10": " ",
-        },
+	"layer": "top",
+	"modules-left": ["custom/launcher","custom/weather","cpu","memory","temperature","custom/media","network","bluetooth","tray","custom/firefox"],
+	"modules-center": ["river/tags", "sway/workspaces"],
+	"modules-right": ["custom/updates","custom/wallpaper","backlight","pulseaudio","clock", "battery","custom/power"],
+
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": "{icon} {volume}%",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+
+    "river/tags": {
+		"num-tags": 6
     },
     "wlr/workspaces": {
         "disable-scroll": false,
@@ -47,52 +38,67 @@
             "10": " ",
         },
     },
-    "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%m-%d %T}",
-        "format-alt": "{:%F %T}",
-        "interval": 1
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "disable-click": true,
+        /* "all-outputs": true, */
+        "format": "{name}:{icon}",
+        "format-icons": {
+            "1": " ",
+            "2": " ",
+            "3": " ",
+            "4": " ",
+            "5": " ",
+            "urgent": " ",
+            "focused": " ",
+            "default": " "
+        }
     },
+        "network": {
+        "format-wifi": " {essid}",
+        "format-disconnected": "⚠Disconnected",
+        "on-click": "nm-connection-editor"
+    },
+        "bluetooth": {
+        // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+        "format": "{status}",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": "{num_connections} connected",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"on-click":"blueberry"
+    },
+	"backlight": {
+		"tooltip": false,
+		"format": " {}%",
+		"interval":1,
+        "on-scroll-up": "light -A 5",
+		"on-scroll-down": "light -U 5"
+	},
     "battery": {
         "states": {
+            "good": 95,
             "warning": 30,
-            "critical": 15
+            "critical": 20
         },
-        "interval": 10,
-        "tooltip": true,
-        "format": "{icon} {capacity}%",
-        "format-plugged": " {capacity}%",
+        "format": "{icon}  {capacity}%",
         "format-charging": " {capacity}%",
-        "format-full": " {capacity}%",
-        "format-icons": [" ", " ", " "],
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
     },
-    "network": {
-        "format": "{ifname}",
-        "format-wifi": " {essid} ({signalStrength}%)",
-        "format-ethernet": " {ifname}",
-        "format-disconnected": "", //An empty format will hide the module.
-        "tooltip-format": " {ifname} via {gwaddr}",
-        "tooltip-format-wifi": " {ipaddr}/{cidr} ({signalStrength}%)",
-        "tooltip-format-ethernet": " {ipaddr}/{cidr}",
-        "tooltip-format-disconnected": "Disconnected",
-        "on-click": "nm-connection-editor",
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+    "clock": {
+        "format": "{:%H:%M  %m/%d}"
     },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-bluetooth": " {icon} {volume}%",
-        "format-muted": "",
-        "format-icons": {
-            "headphones": "",
-            "handsfree": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", ""]
-        },
-        "scroll-step": 1,
-        "on-click": "pavucontrol",
-        "ignored-sinks": ["Easy Effects Sink"]
+    "cpu": {
+        "interval": 2,
+        "format": " {usage}%",
+        "max-length": 10
     },
     "temperature": {
       "thermal-zone": 7,
@@ -107,34 +113,58 @@
           ""  // Icon: temperature-full
       ],
       "tooltip": true,
+      "on-click": "wezterm start s-tui"
     },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{icon} {percent}%",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
-    "cpu": {
-        "interval": 1,
-        "format": " {usage}%",
-    },
+    "custom/firefox":{
+	    "format":"",
+	    "on-click": "firefox"
+    } ,
     "memory": {
-        "interval": 10,
-        "format": "{used:0.1f}G/{total:0.1f}G  "
+        "interval": 30,
+        "format": " {percentage}%",
+        "max-length": 10,
+	"on-click": "wezterm start htop"
     },
-    "bluetooth": {
-        "format-off": " {status}",
-        "format": " {status}",
-        "format-connected": " {device_alias}",
-        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
-        // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
-        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+    "custom/media": {
+        "interval": 30,
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 20,
+        "format-icons": {
+            "spotify": " ",
+            "default": " "
+        },
+        "escape": true,
+        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+        "on-click": "playerctl play-pause"
     },
-    "disk": {
-        "interval": 10,
-        "format": "Disk {percentage_free}%",
-        "path": "/"
-    }
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "wofi --show=drun",
+        "on-click-right": "killall wofi"
+    },
+    "custom/weather": {
+        "format": "{}",
+        "format-alt": "{alt}: {}",
+        "format-alt-click": "click-right",
+        "interval": 1800,
+        "return-type": "json",
+        "exec": "~/.config/waybar/modules/weather.sh",
+        "exec-if": "ping wttr.in -c1"
+    },
+    "custom/power":{
+        "format": " ",
+        "on-click": "wezterm"
+    },
+    "custom/updates":{
+        "format": "{} Update(s)",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+        "interval": 15,
+        "on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated' "
+    },
+    // "custom/wallpaper":{
+    //     "format":" ",
+    //     "on-click": "bash ~/.config/system_scripts/pkill_bc"
+    // }
 }

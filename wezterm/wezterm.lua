@@ -4,6 +4,8 @@ local font = wezterm.font_with_fallback({
 	"Noto Sans CJK SC",
 })
 return {
+	-- OpenGL for GPU acceleration, Software for CPU
+	front_end = "OpenGL",
 	use_ime = true,
 	color_scheme = "Dracula (Official)",
 	font = font,
@@ -29,4 +31,12 @@ return {
 		-- the window is not focused
 		inactive_titlebar_bg = "rgba(0% 0% 0% 30%)",
 	},
+	-- Cursor style
+	default_cursor_style = "BlinkingUnderline",
+
+	-- General
+	automatically_reload_config = true,
+	inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
+	window_background_opacity = 0.4,
+	window_close_confirmation = "NeverPrompt"
 }
