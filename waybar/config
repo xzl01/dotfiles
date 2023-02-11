@@ -1,7 +1,7 @@
 {
 	"layer": "top",
 	"modules-left": ["custom/launcher","custom/weather","cpu","memory","temperature","custom/media","network","bluetooth","tray","custom/firefox"],
-	"modules-center": ["river/tags", "sway/workspaces"],
+	"modules-center": ["river/tags", "wlr/workspaces"],
 	"modules-right": ["custom/updates","custom/wallpaper","backlight","pulseaudio","clock", "battery","custom/power"],
 
 	"pulseaudio": {
@@ -38,22 +38,22 @@
             "10": " ",
         },
     },
-    "sway/workspaces": {
-        "disable-scroll": true,
-        "disable-click": true,
-        /* "all-outputs": true, */
-        "format": "{name}:{icon}",
-        "format-icons": {
-            "1": " ",
-            "2": " ",
-            "3": " ",
-            "4": " ",
-            "5": " ",
-            "urgent": " ",
-            "focused": " ",
-            "default": " "
-        }
-    },
+    // "sway/workspaces": {
+    //     "disable-scroll": true,
+    //     "disable-click": true,
+    //     /* "all-outputs": true, */
+    //     "format": "{name}:{icon}",
+    //     "format-icons": {
+    //         "1": " ",
+    //         "2": " ",
+    //         "3": " ",
+    //         "4": " ",
+    //         "5": " ",
+    //         "urgent": " ",
+    //         "focused": " ",
+    //         "default": " "
+    //     }
+    // },
         "network": {
         "format-wifi": " {essid}",
         "format-disconnected": "⚠Disconnected",
