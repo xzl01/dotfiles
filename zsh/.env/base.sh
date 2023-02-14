@@ -1,5 +1,11 @@
 export PATH=$PATH:~/.local/bin
-export EDITOR=vim
+
+if [ -x "/usr/bin/vim" ]; then
+    export EDITOR=vim
+fi
+if [ -x "/usr/bin/nvim" ]; then
+    export EDITOR=nvim
+fi
 
 # export http_proxy=http://127.0.0.1:7890
 # export https_proxy=$http_proxy
