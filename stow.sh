@@ -50,3 +50,14 @@ if [ -x "/usr/bin/zsh" ]; then
     stow -R zsh -t "${HOME}" && echo "stow zsh done!"
 fi
 
+if [ -f "bg.jpg" ]; then
+    configdir="${HOME}/.local/share/backgrounds"
+    [ ! -d "${configdir}" ] && mkdir "${configdir}"
+    ln -sf "$(pwd)/bg.jpg" "${configdir}/bg.jpg"
+fi
+
+if [ -x "startde" ]; then
+    configdir="${HOME}/.local/bin"
+    [ ! -d "${configdir}" ] && mkdir "${configdir}"
+    ln -sf "$(pwd)/startde" "${configdir}/startde"
+fi
