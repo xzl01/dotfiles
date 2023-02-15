@@ -39,6 +39,13 @@ if [ -x "/usr/bin/wezterm" ]; then
     stow -R "${target}" -t "${configdir}" && echo "stow ${target} done!"
 fi
 
+if [ -x "/usr/bin/alacritty" ]; then
+    target=alacritty
+    configdir="${HOME}/.config/${target}"
+    [ ! -d "${configdir}" ] && mkdir -p "${configdir}"
+    stow -R "${target}" -t "${configdir}" && echo "stow ${target} done!"
+fi
+
 if [ -x "/usr/bin/wofi" ]; then
     target=wofi
     configdir="${HOME}/.config/${target}"
