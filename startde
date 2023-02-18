@@ -22,12 +22,16 @@ export QT_QPA_PLATFORM=wayland
 export GDK_SCALE=2
 
 # for nvidia
-if [ "$(lsmod | grep -c nvidia)" -ne 0 ]; then
+if [ "$(lsmod | grep -c nvidia)" -gt 1 ]; then
     export LIBVA_DRIVER_NAME=nvidia
-    export XDG_SESSION_TYPE=wayland
     export GBM_BACKEND=nvidia-drm
     export __GLX_VENDOR_LIBRARY_NAME=nvidia
     export WLR_NO_HARDWARE_CURSORS=1
+fi
+
+# for nouveau
+if [ "$(lsmod | grep -c nouveau)" -gt 1 ]; then
+    export LIBVA_DRIVER_NAME=nouveau
 fi
 
 if [ -x /usr/bin/Hyprland ]; then
