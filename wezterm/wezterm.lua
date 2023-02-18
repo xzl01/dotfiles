@@ -8,7 +8,6 @@ return {
     color_scheme = "Dracula (Official)",
     font = font,
     font_size = 12,
-    tab_bar_at_top = true,
     enable_scroll_bar = false,
     use_fancy_tab_bar = false,
     hide_tab_bar_if_only_one_tab = true,
@@ -19,9 +18,10 @@ return {
         right = 0,
     },
     window_decorations = "RESIZE",
+    window_background_opacity = 0.85,
     window_frame = {
         font = font,
-        font_size = 9,
+        font_size = 10,
         -- The overall background color of the tab bar when
         -- the window is focused
         active_titlebar_bg = "rgba(0,0,0,0.3)",
