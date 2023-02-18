@@ -261,3 +261,4 @@ include /etc/sway/config.d/*
 
 exec_always fcitx5 -d --replace
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec mpvpaper -s -o "no-audio loop" $(hyprctl monitors | awk '{print $2}' | awk 'NR == 1') ~/.local/share/backgrounds/angry_birds.mov
