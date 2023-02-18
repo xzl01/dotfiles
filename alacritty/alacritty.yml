@@ -101,24 +101,24 @@ scrolling:
 font:
   # 常规字体
   normal:
-    family: "FiraCode Nerd Font"  #目前的版本不支持连字
+    family: "Maple Mono SC NF"  #目前的版本不支持连字
     # 字体风格
     style: Regular
 
   # 粗体
-  # bold:
-  #   family: "FiraCode Nerd Font"
-  #   style: Bold
+  bold:
+    family: "Maple Mono SC NF"
+    style: Bold
 
   # 斜体
-  # italic:
-  #   family: Hack
-  #   style: Italic
+  italic:
+    family: "Maple Mono SC NF"
+    style: Italic
 
   # 斜粗体
-  # bold_italic:
-    # family: monospace
-    # style: Bold Italic
+  bold_italic:
+    family: "Maple Mono SC NF"
+    style: Bold Italic
 
   # 字体大小
   size: 12
