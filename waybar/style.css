@@ -9,6 +9,7 @@
 }
 
 window#waybar {
+	min-height: 18px;
 	background: transparent;
 }
 
