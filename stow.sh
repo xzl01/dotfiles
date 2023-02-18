@@ -60,6 +60,13 @@ if [ -x "/usr/bin/mpv" ]; then
 	stow -R "${target}" -t "${configdir}" && echo "stow ${target} done!"
 fi
 
+if [ -x "/usr/bin/mpv" ]; then
+    target=mpv
+    configdir="${HOME}/.config/${target}"
+    [ ! -d "${configdir}" ] && mkdir -p "${configdir}"
+    stow -R "${target}" -t "${configdir}" && echo "stow ${target} done!"
+fi
+
 if [ -x "/usr/bin/zsh" ]; then
 	stow -R zsh -t "${HOME}" && echo "stow zsh done!"
 fi
