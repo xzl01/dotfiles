@@ -56,7 +56,7 @@ Sway 是一款专为 Wayland 设计的合成器，旨在与 i3 完全兼容。�
 
 #### hyprland
 
-hyprland配置与sway大部分保持一致。
+hyprland配置与sway大部分保持一致，完全配置参考[官方文档](https://wiki.hyprland.org/)。
 
 #### waybar
 
@@ -113,7 +113,6 @@ source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 另外，还设置一些 alias，替代了一些工具：
 
 * exa 替代 ls 和 tree
-* bottom 替代 top
 * bat 替代 cat
 * rsync 替代 cp
 
