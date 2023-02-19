@@ -15,6 +15,7 @@ dict=(
     ["alacritty"]="alacritty"
     ["wofi"]="wofi"
     ["mpv"]="mpv"
+    ["kitty"]="kitty"
 )
 for key in $(echo "${!dict[*]}")
 do
