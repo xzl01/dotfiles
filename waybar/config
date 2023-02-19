@@ -1,6 +1,10 @@
 {
     "layer": "top",
     "position": "top",
+    "margin-top": 6,
+    "margin-left": 10,
+    "margin-bottom": 0,
+    "margin-right": 10,
     "modules-left": ["cpu","memory", "disk","temperature"],
     "modules-center": ["sway/workspaces", "wlr/workspaces"],
     "modules-right": ["tray","pulseaudio","bluetooth","network","battery","clock"],
@@ -101,7 +105,7 @@
       "thermal-zone": 2, // /sys/class/thermal/thermal_zoneX
       "critical-threshold": 80,
       "interval": 5,
-      "format": "{icon}  {temperatureC}°C",
+      "format": "{icon} {temperatureC}°C",
       "format-icons": [
           "", // Icon: temperature-empty
           "", // Icon: temperature-quarter
