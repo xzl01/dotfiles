@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-  background-color: rgba(26, 27, 38, 0.5);
+  background-color: rgba(26, 27, 38, 0.3);
   transition-property: background-color;
   transition-duration: 0.5s;
   min-height: 18px;
@@ -19,13 +19,13 @@ window#waybar.hidden {
 #workspaces {
   margin: 0px;
   margin-left: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 #workspaces button {
   padding: 0 9px;
   min-width: 40px;
-  border-top: 1px solid #373737;
-  border-bottom: 1px solid #373737;
+  border-top: 1px solid rgba(26, 27, 38, 0.3);
+  border-bottom: 1px solid rgba(26, 27, 38, 0.3);
 }
 
 #workspaces button.focused {

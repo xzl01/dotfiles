@@ -102,7 +102,7 @@
         "ignored-sinks": ["Easy Effects Sink"]
     },
     "temperature": {
-      "thermal-zone": 2, // /sys/class/thermal/thermal_zoneX
+      "thermal-zone": "$(ls /sys/class/thermal | grep -c thermal_zone - 1)", // /sys/class/thermal/thermal_zoneX
       "critical-threshold": 80,
       "interval": 5,
       "format": "{icon} {temperatureC}°C",
