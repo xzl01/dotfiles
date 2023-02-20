@@ -18,22 +18,15 @@ dict=(
     ["kitty"]="kitty"
     ["swaylock"]="swaylock"
     ["dunst"]="dunst"
-    ["eww"]="eww"
 )
 for key in $(echo "${!dict[*]}")
 do
     target=${dict[$key]}
     configdir="${HOME}/.config/${target}"
+    [ -d "${configdir}" ] && rm -rf "${configdir}" && echo "remove ${target} config!"
     if [ -x "/usr/bin/${key}" ]; then
         [ ! -d "${configdir}" ] && mkdir -p "${configdir}"
-        if [ "${key}" == "nvim" ]; then
-            args="--ignore=.github"
-        else
-            args=""
-        fi
-        stow -R "${target}" -t "${configdir}" "${args}" && echo "stow ${target} done!"
-    else
-        [ -d "${configdir}" ] && rm -rf "${configdir}" && echo "remove ${target} config!"
+        stow -R "${target}" -t "${configdir}" && echo "stow ${target} done!"
     fi
 done
 
