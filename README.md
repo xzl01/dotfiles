@@ -14,17 +14,15 @@ Sway 是一款专为 Wayland 设计的合成器，旨在与 i3 完全兼容。�
 
 1. 要完全使用 sway 桌面环境，需安装以下包。
 
-   ```bash
-   ttf-maple-latest waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+   ```shell
+   ttf-maple-latest ttf-firacode-nerd waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
    ```
 
    若使用[Hyprland](https://hyprland.org/)，只需将`sway-im`替换为`hyprland`:
 
-   ```bash
-   ttf-maple-latest waybar-hyprland-git wofi polkit-gnome hyprland-git wl-clipboard swyaidle swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+   ```shell
+   ttf-maple-latest ttf-firacode-nerd waybar-hyprland-git wofi polkit-gnome hyprland-git wl-clipboard swyaidle swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
    ```
-
-   > **最后需将本项目中的`startde`脚本拷贝到`~/.local/bin/`目录。**
 
 2. 要使用基本环境，只需安装部分包。
 
@@ -36,7 +34,7 @@ Sway 是一款专为 Wayland 设计的合成器，旨在与 i3 完全兼容。�
 
 3. 其他的包视个人需求进行安装，但还是建议全部安装
 
-   - `mako`：`sway`环境下的消息通知。
+   - `dunst`：`wayland`环境下的消息通知。
    - `swayidle`：空闲管理，配合`swaylock`当系统空闲时进行锁屏。
    - `swaylock`：同上。
    - `xdg-desktop-portal-wlr`：一套前端桌面的标准协议，由于`sway`基于`wrtools`开发，所以使用这个包，对应的还有`gnome`、`kde`、`gtk`等。
@@ -65,9 +63,9 @@ hyprland 配置与 sway 大部分保持一致，完全配置参考[官方文档]
 包含显示的项目：
 
 1. cpu usage
-2. gpu usage 每个电脑都不同，需根据个人电脑自行配置。
-3. memory
-4. temprature 每个电脑都不同，需根据个人电脑自行配置。
+2. memory
+3. disk free
+4. temprature
 5. workspace
 6. tray
 7. pulseaudio
@@ -88,7 +86,7 @@ hyprland 配置与 sway 大部分保持一致，完全配置参考[官方文档]
 
 在 Archlinux 中可以安装以下包并在`~/.zshrc`中进行配置：
 
-```bash
+```shell
 zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggestions
 ```
 
@@ -129,6 +127,7 @@ source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 仅仅是设置登录`tty1`自动启动`桌面环境`，关于`tty`如何开机自动登陆，请参考[个人博客](https://groveer.github.io/blog/linux/auto-login/)
 
 > 要确保桌面正常启动，需要将本项目中的`startde`文件拷贝到`~/.local/bin/`目录中！
+> 或使用本项目中的`stow.sh`脚本一键配置。
 
 #### wezterm
 
@@ -136,13 +135,21 @@ source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ### 浏览器（firefox）
 
-使用火狐浏览器的好处是个人配置与历史记录完美同步，关于配置，每个人都不一样，这里不再过多介绍。需要注意的是，火狐浏览器虽然原生支持 wayland，但默认并未使用 wayland 原生，需要修改环境变量以启用，关于 wayland 环境配置，可参考[这里](https://groveer.github.io/book/archlinux/config.html#%E9%85%8D%E7%BD%AEwayland%E7%8E%AF%E5%A2%83)
+使用火狐浏览器的好处是个人配置与历史记录完美同步，关于配置，每个人都不一样，这里不再过多介绍。需要注意的是，火狐浏览器虽然原生支持 wayland，但默认并未使用 wayland 原生，需要修改环境变量以启用，关于 wayland 环境配置，可参考[这里](https://groveer.top/post/archlinux_config)
 
-> 使用`startde`会默认配置 wayland 环境变量！
+> 使用`startde`会默认配置 wayland 环境变量！无需单独配置!
 
 ### 编辑器/IDE（neoview）
 
 Neovim 既是编辑器又是 IDE，具体配置可参考[这里](nvim/README.md)
+
+> 使用`stow.sh`脚本后会默认配置，确保`git`功能正常，终端输入`nvim`后等待插件完成安装即可。
+>
+> 若遇到问题，可使用以下命令进行检查：
+>
+> ```shell
+> :checkhealth
+> ```
 
 ### 管理 dotfiles
 
