@@ -17,23 +17,20 @@ window#waybar.hidden {
 }
 
 #workspaces {
-  margin: 0px;
-  margin-left: 10px;
+  margin: 3px;
 }
 #workspaces button {
   padding: 2px 9px;
   min-width: 15px;
-  border: 1px solid rgba(26, 27, 38, 0.3);
+  color: rgba(26, 27, 38, 0.3);
 }
 
 #workspaces button.focused {
-  color: #7aa2f7;
-  border: 1px solid #7aa2f7;
+  color: black;
 }
 
 #workspaces button.active {
-  color: #7aa2f7;
-  border: 1px solid #7aa2f7;
+  color: black;
 }
 
 #workspaces button:hover {
