@@ -19,7 +19,7 @@ export GLFW_IM_MODULE=ibus
 export MOZ_ENABLE_WAYLAND=1
 export QT_QPA_PLATFORM=wayland
 
-export GDK_SCALE=2
+export GDK_SCALE=1
 
 # for nvidia
 if [ "$(lsmod | grep -c nvidia)" -gt 1 ]; then
