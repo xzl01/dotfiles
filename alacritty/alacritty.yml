@@ -40,7 +40,7 @@ window:
   #  x: 0
   #  y: 0
 
-  # 在终端内容周围平均分配额外的 padding。 
+  # 在终端内容周围平均分配额外的 padding。
   # dynamic_padding: false
 
   # 窗口的外边框
@@ -51,7 +51,7 @@ window:
   #
   # macos 可以独占的配置:
   #     - transparent: 标题栏，透明背景和标题栏按钮
-  #     - buttonless: 标题栏，透明背景，但没有标题栏按钮 
+  #     - buttonless: 标题栏，透明背景，但没有标题栏按钮
   decorations: none
   # 背景不透明度
   #
@@ -244,7 +244,7 @@ colors: *tokyo-night
 
 
 
-selection:  
+selection:
   # 分割语义化单词的分隔符，这个会影响到鼠标双击左键的单词选中。
   # 比如 @ 作为分割 username 和 password 的字符，默认配置里面竞是没有的。。。
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t@="
@@ -281,7 +281,7 @@ cursor:
   # 毫秒为单位的光标闪烁间隔
   # blink_interval: 750
 
-  # 如果为true，则当窗口未聚焦时，光标将显示为空心框。 
+  # 如果为true，则当窗口未聚焦时，光标将显示为空心框。
   # unfocused_hollow: true
 
   # Thickness of the cursor relative to the cell width as floating point number
@@ -311,7 +311,7 @@ live_config_reload: true
 # 如果是 None 那么会使用父进程的工作目录
 # working_directory: None
 
-# Alt 和字符连按的时候发送 ESC (\x1b) 
+# Alt 和字符连按的时候发送 ESC (\x1b)
 # alt_send_esc: true
 
 
@@ -329,7 +329,7 @@ mouse:
   hints:
     # 配置单击 URL 时的动作
     #
-    # 单击被识别为URL的文本时，将执行所指定的程序。 URL始终作为最后一个参数添加到命令中。 
+    # 单击被识别为URL的文本时，将执行所指定的程序。 URL始终作为最后一个参数添加到命令中。
     # 如果设置为 None，那么禁用此功能
     #
     # Default:
@@ -349,8 +349,8 @@ mouse:
 # Mouse bindings
 #
 # 配置鼠标动作绑定，和键盘绑定类似。详细配置可以参考 Key bindings 一节
-# 
-# 为了在 Alacritty 中运行的应用程序捕获鼠标时触发鼠标绑定，会自动添加 Shift 修饰符。 
+#
+# 为了在 Alacritty 中运行的应用程序捕获鼠标时触发鼠标绑定，会自动添加 Shift 修饰符。
 #
 # - `mouse`:
 #
@@ -393,7 +393,7 @@ mouse:
 #
 # Then exactly one of:
 #
-# - `chars`: 发送字节序列到正在运行的应用程序 
+# - `chars`: 发送字节序列到正在运行的应用程序
 #
 #    char 字段可以将指定的字符串写入终端。这功能可以用在传递转义序列中。
 #    想要找到诸如  `PageUp` (`"\x1b[5~"`) 这样的转义字符，可以通过 `showkey -a` 命令

@@ -1,0 +1,17 @@
+image=~/.local/share/backgrounds/bg.jpg
+daemonize
+show-failed-attempts
+clock
+effect-blur=55x5
+font="Maple Mono SC NF"
+indicator
+indicator-radius=100
+indicator-thickness=0
+inside-color=23658713
+line-color=00000000
+grace=2
+grace-no-mouse
+grace-no-touch
+datestr=%A %b %d
+fade-in="0.1"
+ignore-empty-password

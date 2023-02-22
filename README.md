@@ -14,34 +14,34 @@ Sway 是一款专为 Wayland 设计的合成器，旨在与 i3 完全兼容。�
 
 1. 要完全使用 sway 桌面环境，需安装以下包。
 
-    ```bash
-    ttf-firacode-nerd waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaylock brightnessctl playerctl grim slurp mako xdg-desktop-portal-wlr
-    ```
+   ```shell
+   ttf-maple-latest ttf-firacode-nerd waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+   ```
 
-    若使用[Hyprland](https://hyprland.org/)，只需将`sway-im`替换为`hyprland`:
-    ```bash
-    ttf-firacode-nerd waybar wofi polkit-gnome hyprland wl-clipboard swaylock brightnessctl playerctl grim slurp mako xdg-desktop-portal-wlr
-    ```
-    > **最后需将本项目中的`startde`脚本拷贝到`~/.local/bin/`目录。**
+   若使用[Hyprland](https://hyprland.org/)，只需将`sway-im`替换为`hyprland`:
+
+   ```shell
+   ttf-maple-latest ttf-firacode-nerd waybar-hyprland-git wofi polkit-gnome hyprland-git wl-clipboard swyaidle swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+   ```
 
 2. 要使用基本环境，只需安装部分包。
 
-    * `sway-im`：该包在 aur 仓库中，官方仓库是`sway`这个包，使用`sway-im`的原因是它对输入法更友好，支持候选栏展示，而官方版本却没有这个功能。
-    * `waybar`：一般叫做状态栏或者 dock 栏，一般放在屏幕上方或下方，它支持`css`样式。
-    * `wofi`：`sway`环境下的启动器，用于替代`X11`环境中的`rofi`。
-    * `wl-clipboard`：`wayland`环境中的复制粘贴工具，本人`sway`配置中必须使用这个包。
-    * `polkit-gnome`：鉴权窗口，部分应用需要提权操作，而`sway`的启动必须要`polkit`服务或`seatd`服务。
+   - `sway-im`：该包在 aur 仓库中，官方仓库是`sway`这个包，使用`sway-im`的原因是它对输入法更友好，支持候选栏展示，而官方版本却没有这个功能。
+   - `waybar`：一般叫做状态栏或者 dock 栏，一般放在屏幕上方或下方，它支持`css`样式。
+   - `wofi`：`sway`环境下的启动器，用于替代`X11`环境中的`rofi`。
+   - `wl-clipboard`：`wayland`环境中的复制粘贴工具，本人`sway`配置中必须使用这个包。
+   - `polkit-gnome`：鉴权窗口，部分应用需要提权操作，而`sway`的启动必须要`polkit`服务或`seatd`服务。
 
 3. 其他的包视个人需求进行安装，但还是建议全部安装
 
-    * `mako`：`sway`环境下的消息通知。
-    * `swayidle`：空闲管理，配合`swaylock`当系统空闲时进行锁屏。
-    * `swaylock`：同上。
-    * `xdg-desktop-portal-wlr`：一套前端桌面的标准协议，由于`sway`基于`wrtools`开发，所以使用这个包，对应的还有`gnome`、`kde`、`gtk`等。
-    * `grim`：`wayland`环境下的截图程序，配合`slurp`使用可以自定义截图区域。
-    * `slurp`：同上。
-    * `brightnessctl`：屏幕背光的命令行控制程序。
-    * `playerctl`：媒体播放器的命令行控制程序。
+   - `dunst`：`wayland`环境下的消息通知。
+   - `swayidle`：空闲管理，配合`swaylock`当系统空闲时进行锁屏。
+   - `swaylock`：同上。
+   - `xdg-desktop-portal-wlr`：一套前端桌面的标准协议，由于`sway`基于`wrtools`开发，所以使用这个包，对应的还有`gnome`、`kde`、`gtk`等。
+   - `grim`：`wayland`环境下的截图程序，配合`slurp`使用可以自定义截图区域。
+   - `slurp`：同上。
+   - `brightnessctl`：屏幕背光的命令行控制程序。
+   - `playerctl`：媒体播放器的命令行控制程序。
 
 #### sway
 
@@ -56,23 +56,23 @@ Sway 是一款专为 Wayland 设计的合成器，旨在与 i3 完全兼容。�
 
 #### hyprland
 
-hyprland配置与sway大部分保持一致。
+hyprland 配置与 sway 大部分保持一致，完全配置参考[官方文档](https://wiki.hyprland.org/)。
 
 #### waybar
 
 包含显示的项目：
 
 1. cpu usage
-2. gpu usage 每个电脑都不同，需根据个人电脑自行配置。
 2. memory
-3. temprature 每个电脑都不同，需根据个人电脑自行配置。
-4. workspace
-5. tray
-6. pulseaudio
-7. network
-8. battery
-9. clock
-10. `waybar`完全配置参考[官方文档](https://github.com/Alexays/Waybar/wiki/Configuration)。
+3. disk free
+4. temprature
+5. workspace
+6. tray
+7. pulseaudio
+8. network
+9. battery
+10. clock
+11. `waybar`完全配置参考[官方文档](https://github.com/Alexays/Waybar/wiki/Configuration)。
 
 #### wofi
 
@@ -85,16 +85,21 @@ hyprland配置与sway大部分保持一致。
 本人并未使用`oh-my-zsh`这种比较重量级的配置工具，而是使用 powerlevel10k 主题和几个插件。
 
 在 Archlinux 中可以安装以下包并在`~/.zshrc`中进行配置：
-```bash
+
+```shell
 zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggestions
 ```
+
 配置：
+
 ```bash
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
+
 在其他发行版上可直接从 github 上下载对应的插件：
+
 ```bash
 mkdir -p ~/.zsh/plugins
 cd ~/.zsh/plugins
@@ -104,6 +109,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 ```
 
 配置：
+
 ```bash
 source ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -112,32 +118,40 @@ source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 另外，还设置一些 alias，替代了一些工具：
 
-* exa 替代 ls 和 tree
-* bottom 替代 top
-* bat 替代 cat
-* rsync 替代 cp
+- exa 替代 ls 和 tree
+- bat 替代 cat
+- rsync 替代 cp
 
 关于`~/.zprofile`：
 
 仅仅是设置登录`tty1`自动启动`桌面环境`，关于`tty`如何开机自动登陆，请参考[个人博客](https://groveer.github.io/blog/linux/auto-login/)
 
 > 要确保桌面正常启动，需要将本项目中的`startde`文件拷贝到`~/.local/bin/`目录中！
+> 或使用本项目中的`stow.sh`脚本一键配置。
 
 #### wezterm
 
-`wezterm`的配置文件在`~/.config/wezterm/wezterm.lua`，配置文件可用`stow`进行软链，这里对wezterm进行了简单的配置，主要是透明背景。
+`wezterm`的配置文件在`~/.config/wezterm/wezterm.lua`，配置文件可用`stow`进行软链，这里对 wezterm 进行了简单的配置，主要是透明背景。
 
 ### 浏览器（firefox）
 
-使用火狐浏览器的好处是个人配置与历史记录完美同步，关于配置，每个人都不一样，这里不再过多介绍。需要注意的是，火狐浏览器虽然原生支持wayland，但默认并未使用wayland原生，需要修改环境变量以启用，关于wayland环境配置，可参考[这里](https://groveer.github.io/book/archlinux/config.html#%E9%85%8D%E7%BD%AEwayland%E7%8E%AF%E5%A2%83)
+使用火狐浏览器的好处是个人配置与历史记录完美同步，关于配置，每个人都不一样，这里不再过多介绍。需要注意的是，火狐浏览器虽然原生支持 wayland，但默认并未使用 wayland 原生，需要修改环境变量以启用，关于 wayland 环境配置，可参考[这里](https://groveer.top/post/archlinux_config)
 
-> 使用`startde`会默认配置wayland环境变量！
+> 使用`startde`会默认配置 wayland 环境变量！无需单独配置!
 
 ### 编辑器/IDE（neoview）
 
 Neovim 既是编辑器又是 IDE，具体配置可参考[这里](nvim/README.md)
 
-### 管理dotfiles
+> 使用`stow.sh`脚本后会默认配置，确保`git`功能正常，终端输入`nvim`后等待插件完成安装即可。
+>
+> 若遇到问题，可使用以下命令进行检查：
+>
+> ```shell
+> :checkhealth
+> ```
+
+### 管理 dotfiles
 
 1. 本人使用`stow`来管理 dotfiles，好处是配置文件全部集中在本项目中，只需修改本项目内容即可方便快速的部署 dotfiles 并使其生效，其原理就是在对应的目录中创建软链。
 2. 以`zsh`为例，首先删除用户目录中原来的`.zprofile`和`.zshrc`文件，然后执行：`stow zsh -t ~`。
