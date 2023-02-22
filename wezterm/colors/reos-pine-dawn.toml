@@ -2,7 +2,7 @@
 [colors]
 foreground = "#575279"
 background = "#faf4ed"
-cursor_bg = "#9893a5"
+cursor_bg = "#9ccfd8"
 cursor_border = "#9893a5"
 cursor_fg = "#575279"
 selection_bg = "#f2e9e1"

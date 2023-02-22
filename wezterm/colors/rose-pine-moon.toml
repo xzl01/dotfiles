@@ -2,10 +2,10 @@
 [colors]
 foreground = "#e0def4"
 background = "#232136"
-cursor_bg = "#59546d"
-cursor_border = "#59546d"
-cursor_fg = "#e0def4"
-selection_bg = "#393552"
+cursor_bg = "#9cffd8" # 光标背景色
+cursor_border = "#59546d" # 光标边框色
+cursor_fg = "#e0def4" # 光标前景色
+selection_bg = "#393552" # 选中文本背景色
 selection_fg = "#817c9c"
 
 ansi = ["#393552", "#eb6f92", "#3e8fb0", "#f6c177", "#9ccfd8", "#c4a7e7", "#ebbcba", "#e0def4"]
