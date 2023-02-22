@@ -191,9 +191,9 @@ return {
 	show_tab_index_in_tab_bar = false,
 	tab_bar_at_bottom = false,
 	-- General
-	automatically_reload_config = true,
-	inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
-	window_background_opacity = 0.4,
-	window_close_confirmation = "NeverPrompt",
-	window_frame = { active_titlebar_bg = "#45475a", font = font_with_fallback(font_name, { bold = true }) },
+	automatically_reload_config = true, -- 自动重载配置
+	inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 }, -- 窗口不活跃时的颜色
+	window_background_opacity = 0.7, -- 透明度
+	window_close_confirmation = "NeverPrompt", -- 关闭窗口时不提示
+	window_frame = { active_titlebar_bg = "#45475a", font = font_with_fallback(font_name, { bold = true }) }, -- 标题栏字体
 }

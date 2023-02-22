@@ -19,7 +19,20 @@ export GLFW_IM_MODULE=ibus
 export MOZ_ENABLE_WAYLAND=1
 export QT_QPA_PLATFORM=wayland
 
-export GDK_SCALE=2
+export GDK_SCALE=1
+
+# for nvidia
+if [ "$(lsmod | grep -c nvidia)" -gt 1 ]; then
+    export LIBVA_DRIVER_NAME=nvidia
+    export GBM_BACKEND=nvidia-drm
+    export __GLX_VENDOR_LIBRARY_NAME=nvidia
+    export WLR_NO_HARDWARE_CURSORS=1
+fi
+
+# for nouveau
+if [ "$(lsmod | grep -c nouveau)" -gt 1 ]; then
+    export LIBVA_DRIVER_NAME=nouveau
+fi
 
 # for nvidia
 if [ "$(lsmod | grep -c nvidia)" -ne 0 ]; then
