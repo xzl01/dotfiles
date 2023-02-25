@@ -15,13 +15,13 @@ Sway 是一款专为 Wayland 设计的合成器，旨在与 i3 完全兼容。�
 1. 要完全使用 sway 桌面环境，需安装以下包。
 
    ```shell
-   ttf-maple-latest ttf-firacode-nerd waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+   ttf-maple-latest ttf-firacode-nerd waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
    ```
 
    若使用[Hyprland](https://hyprland.org/)，只需将`sway-im`替换为`hyprland`:
 
    ```shell
-   ttf-maple-latest ttf-firacode-nerd waybar-hyprland-git wofi polkit-gnome hyprland-git wl-clipboard swyaidle swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+   ttf-maple-latest ttf-firacode-nerd waybar-hyprland-git wofi polkit-gnome hyprland-git wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
    ```
 
 2. 要使用基本环境，只需安装部分包。
