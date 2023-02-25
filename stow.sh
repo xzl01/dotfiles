@@ -18,6 +18,7 @@ dict=(
     ["kitty"]="kitty"
     ["swaylock"]="swaylock"
     ["dunst"]="dunst"
+    ["neofetch"]="neofetch"
 )
 for key in $(echo "${!dict[*]}")
 do
