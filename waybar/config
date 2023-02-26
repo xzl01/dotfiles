@@ -20,7 +20,8 @@
         "bluetooth",
         "network",
         "battery",
-        "clock"
+        "clock",
+        "custom/power"
     ],
     "wlr/workspaces": {
         "disable-scroll": false,
@@ -41,6 +42,11 @@
     },
     "tray": {
         "spacing": 5
+    },
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip": false
     },
     "clock": {
         "format": " {:%H:%M}",
