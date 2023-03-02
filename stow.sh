@@ -32,12 +32,18 @@ do
     fi
 done
 
-
-if [ -x "/usr/bin/zsh" ]; then
-    stow -R zsh -t "${HOME}" && echo "stow zsh done!"
-else
-    stow -D zsh -t "${HOME}" && echo "revome zsh config!"
-fi
+arr=(
+    "zsh"
+    "gdb"
+)
+for target in ${arr[@]}
+do
+    if [ -x "/usr/bin/${target}" ]; then
+        stow -R ${target} -t "${HOME}" && echo "stow ${target} done!"
+    else
+        stow -D ${target} -t "${HOME}" && echo "revome ${target} config!"
+    fi
+done
 
 if [ -f "bg.jpg" ]; then
     target=bg.jpg
