@@ -75,10 +75,36 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 Please read [my nvim config](nvim/README.md)
 
-## Browser (Firefox)
+## Browser
+
+### firefox
 
 ```bash
 yay -S firefox
+```
+
+### edge
+
+```bash
+yay -S microsoft-edge-stable-bin
+```
+
+in wayland:
+
+```bash
+-enable-features=UseOzonePlatform -ozone-platform=wayland
+```
+
+proxy:
+
+```bash
+--proxy-server="http://127.0.0.1:7890"
+```
+
+add these flags in desktop file:
+
+```bash
+sudo vim /usr/share/applications/microsoft-edge.desktop
 ```
 
 ## Tools
