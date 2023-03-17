@@ -16,6 +16,7 @@ if [ -x "/usr/bin/exa" ]; then
     alias ls="exa --icons"
     alias l="exa -al --icons"
     alias ll="exa -l --icons"
+    alias lla = "exa -la --icons"
     alias tree="exa -T --icons"
 fi
 
@@ -33,4 +34,3 @@ fi
 if [ -x "/usr/bin/rsync" ]; then
     alias cp="rsync -avP"
 fi
-
