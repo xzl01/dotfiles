@@ -1,7 +1,7 @@
 * {
   border: none;
   border-radius: 15px;
-  font-family: "FiraCode Nerd Font, Maple Mono NF";
+  font-family: "FiraCode Nerd Font Mono";
   font-size: 15px;
 }
 
@@ -52,8 +52,8 @@ window#waybar.hidden {
 }
 
 #custom-power {
-    color: #db4b4b;
-    margin-right: 10px;
+  color: #db4b4b;
+  margin-right: 10px;
 }
 
 #network {

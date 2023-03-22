@@ -13,13 +13,13 @@
 1. Hyprland 环境
 
 ```bash
-yay -S ttf-maple-latest ttf-firacode-nerd waybar-hyprland-git wofi polkit-gnome hyprland-git wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+yay -S ttf-firacode-nerd waybar-hyprland-git wofi polkit-gnome hyprland-git wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
 ```
 
 2. sway 环境
 
 ```bash
-yay -S ttf-maple-latest ttf-firacode-nerd waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+yay -S ttf-firacode-nerd waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
 ```
 
 - 窗管: [Hyprland](https://hyprland.org/)/[sway](https://swaywm.org/)

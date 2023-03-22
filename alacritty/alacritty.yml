@@ -40,7 +40,7 @@ window:
   #  x: 0
   #  y: 0
 
-  # 在终端内容周围平均分配额外的 padding。 
+  # 在终端内容周围平均分配额外的 padding。
   # dynamic_padding: false
 
   # 窗口的外边框
@@ -51,7 +51,7 @@ window:
   #
   # macos 可以独占的配置:
   #     - transparent: 标题栏，透明背景和标题栏按钮
-  #     - buttonless: 标题栏，透明背景，但没有标题栏按钮 
+  #     - buttonless: 标题栏，透明背景，但没有标题栏按钮
   decorations: none
   # 背景不透明度
   #
@@ -78,10 +78,10 @@ window:
 
   # Window class (Linux/BSD only):
   # class:
-    # Application instance name
-    # instance: Alacritty
-    # General application class
-    # general: Alacritty
+  # Application instance name
+  # instance: Alacritty
+  # General application class
+  # general: Alacritty
 
   # GTK theme variant (Linux/BSD only)
   #
@@ -96,28 +96,27 @@ scrolling:
   # 一次滚动几行
   multiplier: 3
 
-
 # 字体配置
 font:
   # 常规字体
   normal:
-    family: "Maple Mono SC NF"  #目前的版本不支持连字
+    family: "FiraCode Nerd Font Mono" #目前的版本不支持连字
     # 字体风格
     style: Regular
 
   # 粗体
   bold:
-    family: "Maple Mono SC NF"
+    family: "FiraCode Nerd Font Mono"
     style: Bold
 
   # 斜体
   italic:
-    family: "Maple Mono SC NF"
+    family: "FiraCode Nerd Font Mono"
     style: Italic
 
   # 斜粗体
   bold_italic:
-    family: "Maple Mono SC NF"
+    family: "FiraCode Nerd Font Mono"
     style: Bold Italic
 
   # 字体大小
@@ -125,7 +124,7 @@ font:
 
   # 每个字符的间的字间距。"offset.y" 可以控制行距，"offset.x" 可以改变字符间距。
   offset:
-    x: 1  # 我这里改成 1 了，个人感觉比较舒服
+    x: 1 # 我这里改成 1 了，个人感觉比较舒服
     y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
@@ -143,67 +142,64 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-
 # 颜色配置，建议不要自己折腾，直接 https://github.com/eendroroy/alacritty-theme
 schemes:
   # Tokyo Night theme, based on both:
   #   https://github.com/ghifarit53/tokyonight-vim
   #   https://github.com/enkia/tokyo-night-vscode-theme
-  tokyo-night: &tokyo-night
-    # Default colors
+  tokyo-night: &tokyo-night # Default colors
     primary:
-      background: '0x1a1b26'
-      foreground: '0xa9b1d6'
+      background: "0x1a1b26"
+      foreground: "0xa9b1d6"
 
     # Normal colors
     normal:
-      black:   '0x32344a'
-      red:     '0xf7768e'
-      green:   '0x9ece6a'
-      yellow:  '0xe0af68'
-      blue:    '0x7aa2f7'
-      magenta: '0xad8ee6'
-      cyan:    '0x449dab'
-      white:   '0x787c99'
+      black: "0x32344a"
+      red: "0xf7768e"
+      green: "0x9ece6a"
+      yellow: "0xe0af68"
+      blue: "0x7aa2f7"
+      magenta: "0xad8ee6"
+      cyan: "0x449dab"
+      white: "0x787c99"
 
     # Bright colors
     bright:
-      black:   '0x444b6a'
-      red:     '0xff7a93'
-      green:   '0xb9f27c'
-      yellow:  '0xff9e64'
-      blue:    '0x7da6ff'
-      magenta: '0xbb9af7'
-      cyan:    '0x0db9d7'
-      white:   '0xacb0d0'
+      black: "0x444b6a"
+      red: "0xff7a93"
+      green: "0xb9f27c"
+      yellow: "0xff9e64"
+      blue: "0x7da6ff"
+      magenta: "0xbb9af7"
+      cyan: "0x0db9d7"
+      white: "0xacb0d0"
 
-  tokyo-night-storm: &tokyo-night-storm
-    # Default colors
+  tokyo-night-storm: &tokyo-night-storm # Default colors
     primary:
-      background: '0x24283b'
-      foreground: '0xa9b1d6'
+      background: "0x24283b"
+      foreground: "0xa9b1d6"
 
     # Normal colors
     normal:
-      black:   '0x32344a'
-      red:     '0xf7768e'
-      green:   '0x9ece6a'
-      yellow:  '0xe0af68'
-      blue:    '0x7aa2f7'
-      magenta: '0xad8ee6'
-      cyan:    '0x449dab'
-      white:   '0x9699a8'
+      black: "0x32344a"
+      red: "0xf7768e"
+      green: "0x9ece6a"
+      yellow: "0xe0af68"
+      blue: "0x7aa2f7"
+      magenta: "0xad8ee6"
+      cyan: "0x449dab"
+      white: "0x9699a8"
 
     # Bright colors
     bright:
-      black:   '0x444b6a'
-      red:     '0xff7a93'
-      green:   '0xb9f27c'
-      yellow:  '0xff9e64'
-      blue:    '0x7da6ff'
-      magenta: '0xbb9af7'
-      cyan:    '0x0db9d7'
-      white:   '0xacb0d0'
+      black: "0x444b6a"
+      red: "0xff7a93"
+      green: "0xb9f27c"
+      yellow: "0xff9e64"
+      blue: "0x7da6ff"
+      magenta: "0xbb9af7"
+      cyan: "0x0db9d7"
+      white: "0xacb0d0"
 
 colors: *tokyo-night
 
@@ -212,46 +208,43 @@ colors: *tokyo-night
 # 配置接收到 BEL 控制字符后的
 # 每当接收到BEL控制字符时，钟就会响起。
 # bell:
-  # 动画效果
-  #
-  # 可以为下面的值，可以设置后自己感受:
-  #   - Ease
-  #   - EaseOut
-  #   - EaseOutSine
-  #   - EaseOutQuad
-  #   - EaseOutCubic
-  #   - EaseOutQuart
-  #   - EaseOutQuint
-  #   - EaseOutExpo
-  #   - EaseOutCirc
-  #   - Linear
-  # animation: EaseOutExpo
+# 动画效果
+#
+# 可以为下面的值，可以设置后自己感受:
+#   - Ease
+#   - EaseOut
+#   - EaseOutSine
+#   - EaseOutQuad
+#   - EaseOutCubic
+#   - EaseOutQuart
+#   - EaseOutQuint
+#   - EaseOutExpo
+#   - EaseOutCirc
+#   - Linear
+# animation: EaseOutExpo
 
-  # 动画闪烁的持续时间（以毫秒为单位）。设置为 0 表示禁用动画效果
-  # duration: 0
+# 动画闪烁的持续时间（以毫秒为单位）。设置为 0 表示禁用动画效果
+# duration: 0
 
-  # 动画颜色.
-  # color: '#ffffff'
+# 动画颜色.
+# color: '#ffffff'
 
-  # 响铃后执行的命令， 配置为 None 则不执行任何命令
-  #
-  # Example:
-  #   command:
-  #     program: notify-send
-  #     args: ["Hello, World!"]
-  #
-  # command: None
+# 响铃后执行的命令， 配置为 None 则不执行任何命令
+#
+# Example:
+#   command:
+#     program: notify-send
+#     args: ["Hello, World!"]
+#
+# command: None
 
-
-
-selection:  
+selection:
   # 分割语义化单词的分隔符，这个会影响到鼠标双击左键的单词选中。
   # 比如 @ 作为分割 username 和 password 的字符，默认配置里面竞是没有的。。。
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t@="
 
   # 选中文本后是否复制到主剪贴板，关于主剪贴板是啥可以参考 https://wiki.archlinux.org/index.php/clipboard
   save_to_clipboard: true
-
 
 # 光标配置
 cursor:
@@ -281,7 +274,7 @@ cursor:
   # 毫秒为单位的光标闪烁间隔
   # blink_interval: 750
 
-  # 如果为true，则当窗口未聚焦时，光标将显示为空心框。 
+  # 如果为true，则当窗口未聚焦时，光标将显示为空心框。
   # unfocused_hollow: true
 
   # Thickness of the cursor relative to the cell width as floating point number
@@ -290,7 +283,6 @@ cursor:
 
 # 是否启用配置热更新
 live_config_reload: true
-
 
 # Shell
 #
@@ -305,15 +297,13 @@ live_config_reload: true
 #  args:
 #    - --login
 
-
 # 启动时的目录
 #
 # 如果是 None 那么会使用父进程的工作目录
 # working_directory: None
 
-# Alt 和字符连按的时候发送 ESC (\x1b) 
+# Alt 和字符连按的时候发送 ESC (\x1b)
 # alt_send_esc: true
-
 
 # 鼠标配置
 mouse:
@@ -329,7 +319,7 @@ mouse:
   hints:
     # 配置单击 URL 时的动作
     #
-    # 单击被识别为URL的文本时，将执行所指定的程序。 URL始终作为最后一个参数添加到命令中。 
+    # 单击被识别为URL的文本时，将执行所指定的程序。 URL始终作为最后一个参数添加到命令中。
     # 如果设置为 None，那么禁用此功能
     #
     # Default:
@@ -345,12 +335,11 @@ mouse:
     # 配置修饰键，Alacritty 默认单击就打开 URL，如果将此项配置为 Command，那么需要按住 Command 然后单击
     modifiers: Command
 
-
 # Mouse bindings
 #
 # 配置鼠标动作绑定，和键盘绑定类似。详细配置可以参考 Key bindings 一节
-# 
-# 为了在 Alacritty 中运行的应用程序捕获鼠标时触发鼠标绑定，会自动添加 Shift 修饰符。 
+#
+# 为了在 Alacritty 中运行的应用程序捕获鼠标时触发鼠标绑定，会自动添加 Shift 修饰符。
 #
 # - `mouse`:
 #
@@ -366,7 +355,6 @@ mouse:
 # - `mods` (see key bindings)
 # mouse_bindings:
 # - { mouse: Middle, action: PasteSelection } # 按鼠标中键粘贴选中内容
-
 
 # Key bindings
 #
@@ -393,7 +381,7 @@ mouse:
 #
 # Then exactly one of:
 #
-# - `chars`: 发送字节序列到正在运行的应用程序 
+# - `chars`: 发送字节序列到正在运行的应用程序
 #
 #    char 字段可以将指定的字符串写入终端。这功能可以用在传递转义序列中。
 #    想要找到诸如  `PageUp` (`"\x1b[5~"`) 这样的转义字符，可以通过 `showkey -a` 命令
@@ -516,92 +504,89 @@ mouse:
 # 下面是我的键位绑定，使用 Tmux。通过转义序列触发 tmux 的 prefix 和快捷键位
 # Tmux 和 Alacritty 集成可以参考 https://arslan.io/2018/02/05/gpu-accelerated-terminal-alacritty/
 key_bindings:
-  - { key: LBracket,          mods: Command,                      chars: "\x1d\x5b"}
-  - { key: Apostrophe,        mods: Command,                      chars: "\x1d\x22"}
-  - { key: S,                 mods: Command,                      chars: "\x1d\x25"}
-  - { key: J,                 mods: Command,                      chars: "\x1d\x6a"}
-  - { key: K,                 mods: Command,                      chars: "\x1d\x6b"}
-  - { key: H,                 mods: Command,                      chars: "\x1d\x68"}
-  - { key: L,                 mods: Command,                      chars: "\x1d\x6c"}
-  - { key: J,                 mods: Command|Shift,                chars: "\x1d\x4a"}
-  - { key: K,                 mods: Command|Shift,                chars: "\x1d\x4b"}
-  - { key: H,                 mods: Command|Shift,                chars: "\x1d\x48"}
-  - { key: L,                 mods: Command|Shift,                chars: "\x1d\x4c"}
-  - { key: W,                 mods: Command,                      chars: "\x1d\x77"}
-  - { key: T,                 mods: Command,                      chars: "\x1d\x63"}
-  - { key: D,                 mods: Command,                      chars: "\x1d\x26"}
-  - { key: X,                 mods: Command,                      chars: "\x1d\x78"}
-  - { key: Z,                 mods: Command,                      chars: "\x1d\x7a"}
-  - { key: N,                 mods: Command,                      chars: "\x1d\x71"}
-  - { key: Semicolon,         mods: Command|Shift,                chars: "\x1d\x3a"}
-  - { key: Key1,              mods: Command,                      chars: "\x1d\x31"}
-  - { key: Key2,              mods: Command,                      chars: "\x1d\x32"}
-  - { key: Key3,              mods: Command,                      chars: "\x1d\x33"}
-  - { key: Key4,              mods: Command,                      chars: "\x1d\x34"}
-  - { key: Key5,              mods: Command,                      chars: "\x1d\x35"}
-  - { key: Key6,              mods: Command,                      chars: "\x1d\x36"}
-  - { key: Key7,              mods: Command,                      chars: "\x1d\x37"}
-  - { key: Key8,              mods: Command,                      chars: "\x1d\x38"}
-  - { key: Key9,              mods: Command,                      chars: "\x1d\x39"}
-
-
+  - { key: LBracket, mods: Command, chars: "\x1d\x5b" }
+  - { key: Apostrophe, mods: Command, chars: "\x1d\x22" }
+  - { key: S, mods: Command, chars: "\x1d\x25" }
+  - { key: J, mods: Command, chars: "\x1d\x6a" }
+  - { key: K, mods: Command, chars: "\x1d\x6b" }
+  - { key: H, mods: Command, chars: "\x1d\x68" }
+  - { key: L, mods: Command, chars: "\x1d\x6c" }
+  - { key: J, mods: Command|Shift, chars: "\x1d\x4a" }
+  - { key: K, mods: Command|Shift, chars: "\x1d\x4b" }
+  - { key: H, mods: Command|Shift, chars: "\x1d\x48" }
+  - { key: L, mods: Command|Shift, chars: "\x1d\x4c" }
+  - { key: W, mods: Command, chars: "\x1d\x77" }
+  - { key: T, mods: Command, chars: "\x1d\x63" }
+  - { key: D, mods: Command, chars: "\x1d\x26" }
+  - { key: X, mods: Command, chars: "\x1d\x78" }
+  - { key: Z, mods: Command, chars: "\x1d\x7a" }
+  - { key: N, mods: Command, chars: "\x1d\x71" }
+  - { key: Semicolon, mods: Command|Shift, chars: "\x1d\x3a" }
+  - { key: Key1, mods: Command, chars: "\x1d\x31" }
+  - { key: Key2, mods: Command, chars: "\x1d\x32" }
+  - { key: Key3, mods: Command, chars: "\x1d\x33" }
+  - { key: Key4, mods: Command, chars: "\x1d\x34" }
+  - { key: Key5, mods: Command, chars: "\x1d\x35" }
+  - { key: Key6, mods: Command, chars: "\x1d\x36" }
+  - { key: Key7, mods: Command, chars: "\x1d\x37" }
+  - { key: Key8, mods: Command, chars: "\x1d\x38" }
+  - { key: Key9, mods: Command, chars: "\x1d\x39" }
 # 不使用 tmux 可以参考这份
 # key_bindings:
-  #- { key: LBracket,                    mods: Command,    action: ToggleViMode            }
-  #- { key: U,      mods: Command,       mode: ~Vi|~Search,action: ScrollHalfPageUp        }
-  #- { key: D,      mods: Command,       mode: ~Vi|~Search,action: ScrollHalfPageDown      }
-  #- { key: LBracket,  mods: Control,mode: Vi|~Search,     action: ClearSelection          }
-  #- { key: C,      mods: Control,       mode: Vi|~Search, action: ToggleViMode            }
-  #- { key: G,                           mode: Vi|~Search, action: ScrollToTop             }
-  #- { key: G,      mods: Shift,         mode: Vi|~Search, action: ScrollToBottom          }
-  #- { key: U,      mods: Control,       mode: Vi|~Search, action: ScrollHalfPageUp        }
-  #- { key: D,      mods: Control,       mode: Vi|~Search, action: ScrollHalfPageDown      }
-  #- { key: Y,                           mode: Vi|~Search, action: Copy                    }
-  #- { key: V,                           mode: Vi|~Search, action: ToggleNormalSelection   }
-  #- { key: V,      mods: Shift,         mode: Vi|~Search, action: ToggleLineSelection     }
-  #- { key: V,      mods: Control,       mode: Vi|~Search, action: ToggleBlockSelection    }
-  #- { key: Return,                      mode: Vi|~Search, action: Open                    }
-  #- { key: K,                           mode: Vi|~Search, action: Up                      }
-  #- { key: J,                           mode: Vi|~Search, action: Down                    }
-  #- { key: H,                           mode: Vi|~Search, action: Left                    }
-  #- { key: L,                           mode: Vi|~Search, action: Right                   }
-  #- { key: Key0,                        mode: Vi|~Search, action: First                   }
-  #- { key: Key4,   mods: Shift,         mode: Vi|~Search, action: Last                    }
-  #- { key: Key6,   mods: Shift,         mode: Vi|~Search, action: FirstOccupied           }
-  #- { key: H,      mods: Shift,         mode: Vi|~Search, action: High                    }
-  #- { key: M,      mods: Shift,         mode: Vi|~Search, action: Middle                  }
-  #- { key: L,      mods: Shift,         mode: Vi|~Search, action: Low                     }
-  #- { key: B,                           mode: Vi|~Search, action: SemanticLeft            }
-  #- { key: W,                           mode: Vi|~Search, action: SemanticRight           }
-  #- { key: E,                           mode: Vi|~Search, action: SemanticRightEnd        }
-  #- { key: B,      mods: Shift,         mode: Vi|~Search, action: WordLeft                }
-  #- { key: W,      mods: Shift,         mode: Vi|~Search, action: WordRight               }
-  #- { key: E,      mods: Shift,         mode: Vi|~Search, action: WordRightEnd            }
-  #- { key: Key5,   mods: Shift,         mode: Vi|~Search, action: Bracket                 }
-  #- { key: Slash,                       mode: Vi|~Search, action: SearchForward           }
-  #- { key: Slash,  mods: Shift,         mode: Vi|~Search, action: SearchBackward          }
-  #- { key: N,                           mode: Vi|~Search, action: SearchNext              }
-  #- { key: N,      mods: Shift,         mode: Vi|~Search, action: SearchPrevious          }
-
+#- { key: LBracket,                    mods: Command,    action: ToggleViMode            }
+#- { key: U,      mods: Command,       mode: ~Vi|~Search,action: ScrollHalfPageUp        }
+#- { key: D,      mods: Command,       mode: ~Vi|~Search,action: ScrollHalfPageDown      }
+#- { key: LBracket,  mods: Control,mode: Vi|~Search,     action: ClearSelection          }
+#- { key: C,      mods: Control,       mode: Vi|~Search, action: ToggleViMode            }
+#- { key: G,                           mode: Vi|~Search, action: ScrollToTop             }
+#- { key: G,      mods: Shift,         mode: Vi|~Search, action: ScrollToBottom          }
+#- { key: U,      mods: Control,       mode: Vi|~Search, action: ScrollHalfPageUp        }
+#- { key: D,      mods: Control,       mode: Vi|~Search, action: ScrollHalfPageDown      }
+#- { key: Y,                           mode: Vi|~Search, action: Copy                    }
+#- { key: V,                           mode: Vi|~Search, action: ToggleNormalSelection   }
+#- { key: V,      mods: Shift,         mode: Vi|~Search, action: ToggleLineSelection     }
+#- { key: V,      mods: Control,       mode: Vi|~Search, action: ToggleBlockSelection    }
+#- { key: Return,                      mode: Vi|~Search, action: Open                    }
+#- { key: K,                           mode: Vi|~Search, action: Up                      }
+#- { key: J,                           mode: Vi|~Search, action: Down                    }
+#- { key: H,                           mode: Vi|~Search, action: Left                    }
+#- { key: L,                           mode: Vi|~Search, action: Right                   }
+#- { key: Key0,                        mode: Vi|~Search, action: First                   }
+#- { key: Key4,   mods: Shift,         mode: Vi|~Search, action: Last                    }
+#- { key: Key6,   mods: Shift,         mode: Vi|~Search, action: FirstOccupied           }
+#- { key: H,      mods: Shift,         mode: Vi|~Search, action: High                    }
+#- { key: M,      mods: Shift,         mode: Vi|~Search, action: Middle                  }
+#- { key: L,      mods: Shift,         mode: Vi|~Search, action: Low                     }
+#- { key: B,                           mode: Vi|~Search, action: SemanticLeft            }
+#- { key: W,                           mode: Vi|~Search, action: SemanticRight           }
+#- { key: E,                           mode: Vi|~Search, action: SemanticRightEnd        }
+#- { key: B,      mods: Shift,         mode: Vi|~Search, action: WordLeft                }
+#- { key: W,      mods: Shift,         mode: Vi|~Search, action: WordRight               }
+#- { key: E,      mods: Shift,         mode: Vi|~Search, action: WordRightEnd            }
+#- { key: Key5,   mods: Shift,         mode: Vi|~Search, action: Bracket                 }
+#- { key: Slash,                       mode: Vi|~Search, action: SearchForward           }
+#- { key: Slash,  mods: Shift,         mode: Vi|~Search, action: SearchBackward          }
+#- { key: N,                           mode: Vi|~Search, action: SearchNext              }
+#- { key: N,      mods: Shift,         mode: Vi|~Search, action: SearchPrevious          }
 
 # 调试
 # debug:
-  # 显示没帧重绘所使用的时间
-  # render_timer: false
+# 显示没帧重绘所使用的时间
+# render_timer: false
 
-  # 持久化日志
-  #persistent_logging: false
+# 持久化日志
+#persistent_logging: false
 
-  # 日志级别
-  #
-  # Values for `log_level`:
-  #   - Off
-  #   - Error
-  #   - Warn
-  #   - Info
-  #   - Debug
-  #   - Trace
-  # log_level: Warn
+# 日志级别
+#
+# Values for `log_level`:
+#   - Off
+#   - Error
+#   - Warn
+#   - Info
+#   - Debug
+#   - Trace
+# log_level: Warn
 
-  # 输出所有接收到的窗口事件
-  # print_events: false
+# 输出所有接收到的窗口事件
+# print_events: false

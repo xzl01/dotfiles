@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 local font = wezterm.font_with_fallback({
-    "Maple Mono SC NF",
+    "FiraCode Nerd Font Mono",
     "Noto Sans CJK SC",
 })
 return {
