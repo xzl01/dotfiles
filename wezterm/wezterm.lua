@@ -18,7 +18,7 @@ return {
         right = 0,
     },
     window_decorations = "RESIZE",
-    window_background_opacity = 0.85,
+    window_background_opacity = 0.8,
     window_frame = {
         font = font,
         font_size = 10,
