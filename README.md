@@ -13,13 +13,13 @@
 1. For Hyprland
 
 ```bash
-yay -S ttf-firacode-nerd waybar-hyprland-git wofi polkit-gnome hyprland-git wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+yay -S waybar-hyprland-git wofi polkit-gnome hyprland-git wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
 ```
 
 2. For sway
 
 ```bash
-yay -S ttf-firacode-nerd waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+yay -S waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
 ```
 
 - WM: [Hyprland](https://hyprland.org/)/[sway](https://swaywm.org/)
@@ -106,6 +106,23 @@ add these flags in desktop file:
 ```bash
 sudo vim /usr/share/applications/microsoft-edge.desktop
 ```
+
+## Font
+
+1. use [Maple-font](https://github.com/subframe7536/Maple-font)
+2. to [release](https://github.com/subframe7536/Maple-font/releases) page, and download **MapleMono-SC-NF.zip**.
+3. unzip the file：
+   ```
+   unzip MapleMono-SC-NF.zip
+   ```
+4. mv ttf file to fonts dir:
+   ```
+   sudo mv SC-NF/*.ttf /usr/share/fonts/TTF/
+   ```
+5. refresh fonts cache:
+   ```
+   fc-cache -vf
+   ```
 
 ## Tools
 

@@ -13,13 +13,13 @@
 1. Hyprland 环境
 
 ```bash
-yay -S ttf-firacode-nerd waybar-hyprland-git wofi polkit-gnome hyprland-git wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+yay -S ttf-maple-latest ttf-firacode-nerd waybar-hyprland-git wofi polkit-gnome hyprland-git wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
 ```
 
 2. sway 环境
 
 ```bash
-yay -S ttf-firacode-nerd waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+yay -S ttf-maple-latest ttf-firacode-nerd waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
 ```
 
 - 窗管: [Hyprland](https://hyprland.org/)/[sway](https://swaywm.org/)
@@ -106,6 +106,23 @@ yay -S microsoft-edge-stable-bin
 ```bash
 sudo vim /usr/share/applications/microsoft-edge.desktop
 ```
+
+## 字体
+
+1. 使用 [Maple-font](https://github.com/subframe7536/Maple-font)
+2. 到 [release](https://github.com/subframe7536/Maple-font/releases) 页面, 并且下载 **MapleMono-SC-NF.zip**.
+3. 解压文件：
+   ```
+   unzip MapleMono-SC-NF.zip
+   ```
+4. 移动 ttf 文件到 fonts 目录:
+   ```
+   sudo mv SC-NF/*.ttf /usr/share/fonts/TTF/
+   ```
+5. 刷新字体缓存:
+   ```
+   fc-cache -vf
+   ```
 
 ## 工具
 

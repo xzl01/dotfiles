@@ -3,7 +3,7 @@ daemonize
 show-failed-attempts
 clock
 effect-blur=55x5
-font="FiraCode Nerd Font Mono"
+font="Maple Mono SC NF"
 indicator
 indicator-radius=100
 indicator-thickness=0
