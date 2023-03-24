@@ -1,7 +1,7 @@
 * {
   border: none;
   border-radius: 15px;
-  font-family: "Maple Mono SC NF";
+  font-family: "Maple Mono NF";
   font-size: 15px;
 }
 
@@ -57,7 +57,7 @@ window#waybar.hidden {
 }
 
 #network {
-  color: #2893d3;
+  color: #b6efae;
 }
 #bluetooth {
   color: #b6e3ce;
@@ -92,26 +92,26 @@ window#waybar.hidden {
 }
 
 #backlight {
-  color: #f8bd96;
+  color: #a8cd96;
 }
 #clock {
   color: #cbe9b3;
 }
 
 #memory {
-  color: #ddb6f2;
+  color: #adf6f2;
 }
 #cpu {
-  color: #30c2fb;
+  color: #a0f2fb;
 }
 
 #temperature {
-  color: #96cdfb;
+  color: #b6fdbb;
 }
 
 #tray {
 }
 
 #disk {
-  color: #b5e8e0;
+  color: #a5f8e0;
 }
