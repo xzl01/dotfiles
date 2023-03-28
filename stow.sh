@@ -36,6 +36,8 @@ done
 arr=(
     "zsh"
     "gdb"
+    "pip"
+    "npm"
 )
 for target in ${arr[@]}
 do
