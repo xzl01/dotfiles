@@ -20,6 +20,7 @@ dict=(
     ["dunst"]="dunst"
     ["neofetch"]="neofetch"
     ["wlogout"]="wlogout"
+    ["btop"]="btop"
 )
 for key in $(echo "${!dict[*]}")
 do
