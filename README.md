@@ -25,7 +25,7 @@ wofi:
 1. For Hyprland
 
 ```bash
-yay -S waybar-hyprland-git wofi polkit-gnome hyprland-git wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+yay -S waybar-hyprland wofi polkit-gnome hyprland wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
 ```
 
 2. For sway
