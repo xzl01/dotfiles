@@ -53,10 +53,10 @@ You can choose one:
 - [Wezterm](https://wezfurlong.org/wezterm/)
 - [Alacritty](https://github.com/alacritty/alacritty)
 
-I use the Kitty:
+I use the Wezterm:
 
 ```bash
-yay -S kitty
+yay -S wezterm
 ```
 
 ### zsh
@@ -139,12 +139,13 @@ sudo vim /usr/share/applications/microsoft-edge.desktop
 ## Tools
 
 ```bash
-yay -S exa bat rsync
+yay -S exa bat rsync btop
 ```
 
 - [exa] instead ls and tree
 - [bat] instead cat
 - [rsync] instead cp and scp
+- [btop] instead top
 
 ## Configs Manager
 

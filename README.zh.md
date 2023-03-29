@@ -53,10 +53,10 @@ yay -S waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-ef
 - [Wezterm](https://wezfurlong.org/wezterm/)
 - [Alacritty](https://github.com/alacritty/alacritty)
 
-本人使用 Kitty:
+本人使用 Wezterm:
 
 ```bash
-yay -S kitty
+yay -S wezterm
 ```
 
 ### zsh
@@ -139,12 +139,13 @@ sudo vim /usr/share/applications/microsoft-edge.desktop
 ## 工具
 
 ```bash
-yay -S exa bat rsync
+yay -S exa bat rsync btop
 ```
 
 - [exa] 代替 ls and tree
 - [bat] 代替 cat
 - [rsync] 代替 cp and scp
+- [btop] 代替 top
 
 ## 配置管理
 

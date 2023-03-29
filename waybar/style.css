@@ -1,7 +1,6 @@
 * {
   border: none;
   border-radius: 15px;
-  font-family: "Maple Mono NF";
   font-size: 15px;
 }
 
@@ -18,11 +17,11 @@ window#waybar.hidden {
 
 #workspaces {
   margin: 0px;
+  color: white;
 }
 #workspaces button {
   padding: 2px 9px;
   min-width: 15px;
-  color: rgba(26, 27, 38, 0.3);
 }
 
 #workspaces button.focused {

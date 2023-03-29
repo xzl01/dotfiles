@@ -1,52 +1,78 @@
+/* Sorting from outside to inside */
 window {
-  margin: 0px;
-  border: 2px solid rgba(122, 162, 242, 0.6);
-  border-radius: 5px;
-  background-color: rgba(122, 162, 242, 0.6);
+  background-color: rgba(203, 166, 247, 1);
+  border-radius: 8px;
   font-family: "Maple Mono SC NF";
-  font-size: 12px;
-}
-
-#input {
-  margin: 5px;
-  border: 1px solid rgba(122, 162, 242, 0.5);
-  color: #7aa2f7;
-  background-color: rgba(122, 162, 242, 0);
-}
-
-#input image {
-  color: #7aa2f7;
-}
-
-#inner-box {
-  margin: 5px;
-  border: none;
-  background-color: rgba(122, 162, 242, 0);
 }
 
 #outer-box {
-  margin: 5px;
   border: none;
-  background-color: rgba(122, 162, 242, 0);
+  border-radius: 8px;
+  background: transparent;
+}
+
+#input {
+  padding: 4px;
+  margin: 4px;
+  padding-left: 20px;
+  border: none;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    rgba(123, 104, 238, 1) 0%,
+    rgba(203, 166, 247, 1) 100%
+  );
+  outline: none;
+  border-radius: 8px;
+  margin: 10px;
+  margin-bottom: 2px;
+}
+#input:focus {
+  border: none;
 }
 
 #scroll {
-  margin: 0px;
+  margin-top: 5px;
   border: none;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  background: transparent;
 }
 
-#text {
-  margin: 5px;
+#inner-box {
+  margin: 4px;
+  border: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  background: transparent;
+}
+
+#entry {
+  margin-left: 6px;
+  margin-right: 6px;
   border: none;
-  color: black;
+  border-radius: 8px;
+  background-color: transparent;
 }
 
 #entry:selected {
-  background-color: rgba(132, 162, 242, 0.2);
-  font-weight: normal;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: linear-gradient(
+    45deg,
+    rgba(123, 104, 238, 1) 30%,
+    rgba(203, 166, 247, 1) 100%
+  );
+}
+
+#text {
+  color: black;
 }
 
 #text:selected {
-  background-color: rgba(132, 162, 242, 0);
-  font-weight: normal;
+  color: white;
+  margin: 0px 0px;
+  border: none;
+  border-radius: 8px;
 }

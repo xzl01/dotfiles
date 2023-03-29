@@ -19,6 +19,7 @@
         "pulseaudio",
         "bluetooth",
         "network",
+        "backlight",
         "battery",
         "clock",
         "custom/power"
