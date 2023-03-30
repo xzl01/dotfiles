@@ -87,8 +87,8 @@
     },
     "network": {
         "format": "{ifname}",
-        "format-wifi": " Wireless {signalStrength}%",
-        "format-ethernet": " Wired",
+        "format-wifi": " {signalStrength}%",
+        "format-ethernet": " ",
         "format-disconnected": "", //An empty format will hide the module.
         "tooltip-format": " {ifname} via {gwaddr}",
         "tooltip-format-wifi": " {ipaddr}/{cidr} ({signalStrength}%)",
@@ -99,7 +99,7 @@
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-bluetooth": " {icon} {volume}%",
-        "format-muted": "",
+        "format-muted": "",
         "format-icons": {
             "headphones": "",
             "handsfree": "",

@@ -84,12 +84,6 @@ window#waybar.hidden {
   animation-direction: alternate;
 }
 
-@keyframes blink {
-  to {
-    color: #bf616a;
-  }
-}
-
 #backlight {
   color: #a8cd96;
 }
