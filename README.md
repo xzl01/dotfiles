@@ -85,7 +85,17 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 ## Editor (Neovim)
 
-Please read [my nvim config](nvim/README.md)
+Please read [my nvim config](https://github.com/Groveer/nvimdots)
+
+Update git submodule:
+
+```bash
+git submodule init && git submodule update
+```
+
+```bash
+cd nvim && git switch owen
+```
 
 ## Browser
 

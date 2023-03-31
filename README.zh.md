@@ -85,7 +85,17 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 ## 编辑器 (Neovim)
 
-Please read [nvim config](nvim/README.md)
+请阅读 [我的 nvim 配置](https://github.com/Groveer/nvimdots)
+
+更新 git 子模块:
+
+```bash
+git submodule init && git submodule update
+```
+
+```bash
+cd nvim && git switch owen
+```
 
 ## 浏览器
 
