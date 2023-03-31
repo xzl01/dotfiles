@@ -7,14 +7,11 @@
 neofetch:
 ![neofetch](https://github.com/Groveer/dotfiles/blob/screenshots/1.png?raw=true)
 
-nvim:
+wofi:
 ![nvim](https://github.com/Groveer/dotfiles/blob/screenshots/2.png?raw=true)
 
 logout:
 ![logout](https://github.com/Groveer/dotfiles/blob/screenshots/3.png?raw=true)
-
-wofi:
-![wofi](https://github.com/Groveer/dotfiles/blob/screenshots/4.png?raw=true)
 
 **You can have the same user experience as me in Archlinux**
 
