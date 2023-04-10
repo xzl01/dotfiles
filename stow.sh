@@ -41,7 +41,7 @@ arr=(
 )
 for target in ${arr[@]}
 do
-    if [ -x "/usr/bin/${target}" ]; then
+    if command -v git >/dev/null 2>&1; then
         stow -R ${target} -t "${HOME}" && echo "stow ${target} done!"
     else
         stow -D ${target} -t "${HOME}" && echo "revome ${target} config!"
