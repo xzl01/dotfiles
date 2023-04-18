@@ -1,9 +1,9 @@
 export PATH=$PATH:~/.local/bin
 
-if [ -x "/usr/bin/vim" ]; then
+if command -v vim >/dev/null 2>&1; then
     export EDITOR=vim
 fi
-if [ -x "/usr/bin/nvim" ]; then
+if command -v nvim >/dev/null 2>&1; then
     export EDITOR=nvim
 fi
 
@@ -12,7 +12,7 @@ fi
 # export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 
 # need exa package
-if [ -x "/usr/bin/exa" ]; then
+if command -v exa >/dev/null 2>&1; then
     alias ls="exa --icons"
     alias l="exa -al --icons"
     alias ll="exa -l --icons"
@@ -20,17 +20,17 @@ if [ -x "/usr/bin/exa" ]; then
 fi
 
 # need bat package
-if [ -x "/usr/bin/bat" ]; then
+if command -v bat >/dev/null 2>&1; then
     alias cat="bat"
 fi
 
-# if debian need batcat
-if [ -x "/usr/bin/batcat" ]; then
+# debian need batcat
+if command -v batcat >/dev/null 2>&1; then
     alias cat="batcat"
 fi
 
 # need rsync package
-if [ -x "/usr/bin/rsync" ]; then
+if command -v rsync >/dev/null 2>&1; then
     alias cp="rsync -avP"
 fi
 
