@@ -128,6 +128,14 @@ sudo vim /usr/share/applications/microsoft-edge.desktop
 
 ## 字体
 
+安装包：
+
+```bash
+yay -S ttf-firacode-nerd ttf-maple-latest
+```
+
+若`ttf-maple-latest`包无法安装时，使用下面方法进行安装：
+
 1. 使用 [Maple-font](https://github.com/subframe7536/Maple-font)
 2. 到 [release](https://github.com/subframe7536/Maple-font/releases) 页面, 并且下载 **MapleMono-SC-NF.zip**.
 3. 解压文件：
