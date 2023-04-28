@@ -11,7 +11,7 @@ fi
 # export https_proxy=$http_proxy
 # export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 
-# need exa package
+# need exa package v0.9.0 or higher
 if command -v exa >/dev/null 2>&1; then
     alias ls="exa --icons"
     alias l="exa -al --icons"
