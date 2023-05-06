@@ -37,6 +37,7 @@ arr=(
     "gdb"
     "pip"
     "npm"
+    "cargo"
 )
 for target in ${arr[@]}
 do
