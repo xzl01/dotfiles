@@ -1,4 +1,4 @@
-if [ -x "/usr/bin/go" ]; then
+if command -v go >/dev/null 2>&1; then
     export GOROOT=/usr/lib/go
     export GOPATH=$HOME/go
     [ -d "/usr/share/gocode" ] && export GOPATH="$GOPATH:/usr/share/gocode"

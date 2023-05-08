@@ -26,7 +26,7 @@ do
     target=${dict[$key]}
     configdir="${HOME}/.config/${target}"
     [ -d "${configdir}" ] && rm -rf "${configdir}" && echo "remove ${target} config!"
-    if [ -x "/usr/bin/${key}" ]; then
+    if command -v "/usr/bin/${key}" >/dev/null 2>&1; then
         [ ! -d "${configdir}" ] && mkdir -p "${configdir}"
         stow -R "${target}" -t "${configdir}" && echo "stow ${target} done!"
     fi
