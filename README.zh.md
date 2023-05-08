@@ -50,10 +50,10 @@ yay -S waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-ef
 - [Wezterm](https://wezfurlong.org/wezterm/)
 - [Alacritty](https://github.com/alacritty/alacritty)
 
-本人使用 Wezterm:
+本人使用 Kitty:
 
 ```bash
-yay -S wezterm
+yay -S kitty
 ```
 
 ### zsh
@@ -94,6 +94,42 @@ git submodule init && git submodule update
 cd nvim && git switch owen
 ```
 
+### 开发环境
+
+安装包：
+
+```bash
+yay -S python-pip fnm
+```
+
+更新环境变量和配置，安装完`pip`后，使用`./stow.sh`脚本会自动使用国内源：
+
+```bash
+rehash
+./stow.sh
+```
+
+```bash
+pip install pynvim
+```
+
+```bash
+fnm install 20 --node-dist-mirror=https://npmmirror.com/mirrors/node
+fnm default 20
+```
+
+安装完`nodejs`和`npm`后，再次更新配置，会自动使用国内源：
+
+```bash
+./stow.sh
+```
+
+```bash
+sudo npm i -g neovim
+```
+
+`pip`和`npm`只是 neovim 基本的环境配置，强烈建议跑完 lua 的配置后使用`:checkhealth`命令查看哪些命令未安装，可继续使用相应的包管理进行安装！
+
 ## 浏览器
 
 firefox:
@@ -131,10 +167,10 @@ sudo vim /usr/share/applications/microsoft-edge.desktop
 安装包：
 
 ```bash
-yay -S ttf-firacode-nerd ttf-maple-latest
+yay -S ttf-maple-nerd ttf-maple-sc-nerd ttf-firacode-nerd
 ```
 
-若`ttf-maple-latest`包无法安装时，使用下面方法进行安装：
+若`ttf-maple-sc-nerd`包无法安装时，使用下面方法进行安装：
 
 1. 使用 [Maple-font](https://github.com/subframe7536/Maple-font)
 2. 到 [release](https://github.com/subframe7536/Maple-font/releases) 页面, 并且下载 **MapleMono-SC-NF.zip**.

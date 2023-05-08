@@ -50,10 +50,10 @@ You can choose one:
 - [Wezterm](https://wezfurlong.org/wezterm/)
 - [Alacritty](https://github.com/alacritty/alacritty)
 
-I use the Wezterm:
+I use the Kitty:
 
 ```bash
-yay -S wezterm
+yay -S kitty
 ```
 
 ### zsh
@@ -94,6 +94,30 @@ git submodule init && git submodule update
 cd nvim && git switch owen
 ```
 
+### Developer Environment
+
+Install packages:
+
+```bash
+yay -S python-pip fnm
+rehash
+```
+
+```bash
+pip install pynvim
+```
+
+```bash
+fnm install 20
+fnm default 20
+```
+
+```bash
+sudo npm i -g neovim
+```
+
+`pip` and `npm` are just the basic environment configuration of neovim, it is highly recommended to use the `:checkhealth` command to see which commands are not installed after running the configuration of lua, you can continue to use the corresponding package management for installation!
+
 ## Browser
 
 ### firefox
@@ -131,10 +155,10 @@ sudo vim /usr/share/applications/microsoft-edge.desktop
 install package:
 
 ```bash
-yay -S ttf-firacode-nerd ttf-maple-latest
+yay -S ttf-maple-nerd ttf-maple-sc-nerd ttf-firacode-nerd
 ```
 
-if cannot install `ttf-maple-latest`, use the following method:
+if cannot install `ttf-maple-sc-nerd`, use the following method:
 
 1. use [Maple-font](https://github.com/subframe7536/Maple-font)
 2. to [release](https://github.com/subframe7536/Maple-font/releases) page, and download **MapleMono-SC-NF.zip**.
