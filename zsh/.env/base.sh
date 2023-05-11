@@ -34,3 +34,4 @@ if command -v rsync >/dev/null 2>&1; then
     alias cp="rsync -avP"
 fi
 
+alias date-changelog="LC_ALL=C date +'%a, %d %b %Y %T %z'"
