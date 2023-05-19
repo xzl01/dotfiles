@@ -1,63 +1,61 @@
 #!/bin/bash
 
 if [ ! -x "/usr/bin/stow" ]; then
-    exit
+	exit
 fi
 
 declare -A dict
 
 dict=(
-    ["Hyprland"]="hypr"
-    ["nvim"]="nvim"
-    ["sway"]="sway"
-    ["waybar"]="waybar"
-    ["wezterm"]="wezterm"
-    ["alacritty"]="alacritty"
-    ["wofi"]="wofi"
-    ["mpv"]="mpv"
-    ["kitty"]="kitty"
-    ["swaylock"]="swaylock"
-    ["dunst"]="dunst"
-    ["neofetch"]="neofetch"
-    ["wlogout"]="wlogout"
+	["Hyprland"]="hypr"
+	["nvim"]="nvim"
+	["sway"]="sway"
+	["waybar"]="waybar"
+	["wezterm"]="wezterm"
+	["alacritty"]="alacritty"
+	["wofi"]="wofi"
+	["mpv"]="mpv"
+	["kitty"]="kitty"
+	["swaylock"]="swaylock"
+	["dunst"]="dunst"
+	["neofetch"]="neofetch"
+	["wlogout"]="wlogout"
 )
-for key in $(echo "${!dict[*]}")
-do
-    target=${dict[$key]}
-    configdir="${HOME}/.config/${target}"
-    [ -d "${configdir}" ] && rm -rf "${configdir}" && echo "remove ${target} config!"
-    if command -v "/usr/bin/${key}" >/dev/null 2>&1; then
-        [ ! -d "${configdir}" ] && mkdir -p "${configdir}"
-        stow -R "${target}" -t "${configdir}" && echo "stow ${target} done!"
-    fi
+for key in $(echo "${!dict[*]}"); do
+	target=${dict[$key]}
+	configdir="${HOME}/.config/${target}"
+	[ -d "${configdir}" ] && rm -rf "${configdir}" && echo "remove ${target} config!"
+	if command -v "${key}" >/dev/null 2>&1; then
+		[ ! -d "${configdir}" ] && mkdir -p "${configdir}"
+		stow -R "${target}" -t "${configdir}" && echo "stow ${target} done!"
+	fi
 done
 
 arr=(
-    "zsh"
-    "gdb"
-    "pip"
-    "npm"
-    "cargo"
+	"zsh"
+	"gdb"
+	"pip"
+	"npm"
+	"cargo"
 )
-for target in ${arr[@]}
-do
-    if command -v ${target} >/dev/null 2>&1; then
-        stow -R ${target} -t "${HOME}" && echo "stow ${target} done!"
-    else
-        stow -D ${target} -t "${HOME}" && echo "revome ${target} config!"
-    fi
+for target in ${arr[@]}; do
+	if command -v ${target} >/dev/null 2>&1; then
+		stow -R ${target} -t "${HOME}" && echo "stow ${target} done!"
+	else
+		stow -D ${target} -t "${HOME}" && echo "revome ${target} config!"
+	fi
 done
 
 if [ -f "bg.jpg" ]; then
-    target=bg.jpg
-    configdir="${HOME}/.local/share/backgrounds"
-    [ ! -d "${configdir}" ] && mkdir "${configdir}"
-    ln -sf "$(pwd)/${target}" "${configdir}/${target}" && echo "ln ${target} done!"
+	target=bg.jpg
+	configdir="${HOME}/.local/share/backgrounds"
+	[ ! -d "${configdir}" ] && mkdir "${configdir}"
+	ln -sf "$(pwd)/${target}" "${configdir}/${target}" && echo "ln ${target} done!"
 fi
 
 if [ -x "startde" ]; then
-    target=startde
-    configdir="${HOME}/.local/bin"
-    [ ! -d "${configdir}" ] && mkdir "${configdir}"
-    ln -sf "$(pwd)/${target}" "${configdir}/${target}" && echo "ln ${target} done!"
+	target=startde
+	configdir="${HOME}/.local/bin"
+	[ ! -d "${configdir}" ] && mkdir "${configdir}"
+	ln -sf "$(pwd)/${target}" "${configdir}/${target}" && echo "ln ${target} done!"
 fi
