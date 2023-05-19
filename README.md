@@ -84,6 +84,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 Please read [my nvim config](https://github.com/Groveer/nvimdots)
 
+Default use git ssh, if you use http, modify `.gitmodules`, set `url`:
+
+```
+https://github.com/Groveer/nvimdots.git
+```
+
 Update git submodule:
 
 ```bash
@@ -93,6 +99,8 @@ git submodule init && git submodule update
 ```bash
 cd nvim && git switch owen
 ```
+
+If use git http, modify `nvim/lua/core/settings`, set `use_ssh` to `false`.
 
 ### Developer Environment
 

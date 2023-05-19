@@ -84,6 +84,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 请阅读 [我的 nvim 配置](https://github.com/Groveer/nvimdots)
 
+默认使用 git ssh 协议，如果使用 http 协议，请先修改文件`.gitmodules`，并设置`url`:
+
+```
+https://github.com/Groveer/nvimdots.git
+```
+
 更新 git 子模块:
 
 ```bash
@@ -93,6 +99,8 @@ git submodule init && git submodule update
 ```bash
 cd nvim && git switch owen
 ```
+
+如果使用 http 协议，需要修改文件`nvim/lua/core/settings.lua`，并设置`use_ssh`为`false`。
 
 ### 开发环境
 
