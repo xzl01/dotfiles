@@ -75,9 +75,9 @@ or use git:
 ```bash
 mkdir -p ~/.zsh/plugins
 cd ~/.zsh/plugins
-git clone https://github.com/romkatv/powerlevel10k.git
-git clone https://github.com/zsh-users/zsh-autosuggestions.git
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git
+git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git
 ```
 
 ## Editor (Neovim)
@@ -97,7 +97,7 @@ git submodule init && git submodule update
 ```
 
 ```bash
-cd nvim && git switch owen
+cd nvim && git switch new
 ```
 
 If use git http, modify `nvim/lua/core/settings`, set `use_ssh` to `false`.
