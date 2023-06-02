@@ -1,6 +1,6 @@
 # 个人配置
 
-[English](README.md)
+[English](README.md) | 中文
 
 ## 截图
 
@@ -22,7 +22,7 @@ logout:
 1. Hyprland 环境
 
 ```bash
-yay -S waybar-hyprland wofi polkit-gnome hyprland wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+yay -S waybar wofi polkit-gnome hyprland wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
 ```
 
 2. sway 环境
@@ -34,11 +34,11 @@ yay -S waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-ef
 - 窗管: [Hyprland](https://hyprland.org/)/[sway](https://swaywm.org/)
 - 任务栏: [waybar](https://github.com/Alexays/Waybar)
 - 壁纸: [swaybg](https://github.com/swaywm/swaybg)/[mpvpaper](https://github.com/GhostNaN/mpvpaper)
-- 锁屏: [swayidle](https://github.com/swaywm/swayidle) [swaylock-effects](https://github.com/mortie/swaylock-effects)
-- 登出: [wlogout](https://github.com/ArtsyMacaw/wlogout)
-- 启动: [wofi](https://hg.sr.ht/~scoopta/wofi)
-- 截图: [grim](https://sr.ht/~emersion/grim/) [slurp](https://github.com/emersion/slurp)
-- 录屏: [wf-recorder](https://github.com/ammen99/wf-recorder)
+- 锁屏: [swayidle](https://github.com/swaywm/swayidle) [swaylock-effects](https://github.com/mortie/swaylock-effects) # Super + L
+- 登出: [wlogout](https://github.com/ArtsyMacaw/wlogout) # Ctrl + Alt + Delete
+- 启动: [wofi](https://hg.sr.ht/~scoopta/wofi) # Super + D
+- 截图: [grim](https://sr.ht/~emersion/grim/) [slurp](https://github.com/emersion/slurp) # Ctrl + Alt + A
+- 录屏: [wf-recorder](https://github.com/ammen99/wf-recorder) # Ctrl + Alt + S (再次运行会停止录屏)
 - 剪切板: [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 - 消息通知: [dunst](https://github.com/dunst-project/dunst)
 
@@ -122,8 +122,8 @@ pip install pynvim
 ```
 
 ```bash
-fnm install 20 --node-dist-mirror=https://npmmirror.com/mirrors/node
-fnm default 20
+fnm install <version/--latest> --node-dist-mirror=https://npmmirror.com/mirrors/node
+fnm default <version>
 ```
 
 安装完`nodejs`和`npm`后，再次更新配置，会自动使用国内源：

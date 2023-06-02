@@ -1,6 +1,6 @@
 # Personal Configurations
 
-[中文](README.zh.md)
+English | [中文](README.zh.md)
 
 ## Screenshots
 
@@ -22,7 +22,7 @@ logout:
 1. For Hyprland
 
 ```bash
-yay -S waybar-hyprland wofi polkit-gnome hyprland wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+yay -S waybar wofi polkit-gnome hyprland wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
 ```
 
 2. For sway
@@ -34,11 +34,11 @@ yay -S waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-ef
 - WM: [Hyprland](https://hyprland.org/)/[sway](https://swaywm.org/)
 - Topbar: [waybar](https://github.com/Alexays/Waybar)
 - Wallpaper: [swaybg](https://github.com/swaywm/swaybg)/[mpvpaper](https://github.com/GhostNaN/mpvpaper)
-- Screensaver: [swayidle](https://github.com/swaywm/swayidle) [swaylock-effects](https://github.com/mortie/swaylock-effects)
-- Logout: [wlogout](https://github.com/ArtsyMacaw/wlogout)
-- Launcher: [wofi](https://hg.sr.ht/~scoopta/wofi)
-- Screenshot: [grim](https://sr.ht/~emersion/grim/) [slurp](https://github.com/emersion/slurp)
-- Screen Recorder: [wf-recorder](https://github.com/ammen99/wf-recorder)
+- Screensaver: [swayidle](https://github.com/swaywm/swayidle) [swaylock-effects](https://github.com/mortie/swaylock-effects) # Super + L
+- Logout: [wlogout](https://github.com/ArtsyMacaw/wlogout) # Ctrl + Alt + Delete
+- Launcher: [wofi](https://hg.sr.ht/~scoopta/wofi) # Super + D
+- Screenshot: [grim](https://sr.ht/~emersion/grim/) [slurp](https://github.com/emersion/slurp) # Ctrl + Alt + A
+- Screen Recorder: [wf-recorder](https://github.com/ammen99/wf-recorder) # Ctrl + Alt + S (re-run to stop)
 - Clipboard: [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 - Notification: [dunst](https://github.com/dunst-project/dunst)
 
@@ -116,8 +116,8 @@ pip install pynvim
 ```
 
 ```bash
-fnm install 20
-fnm default 20
+fnm install <version/--latest>
+fnm default <version>
 ```
 
 ```bash
