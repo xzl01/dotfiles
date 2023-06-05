@@ -1,4 +1,4 @@
-image=~/.local/share/backgrounds/bg.jpg
+screenshots
 daemonize
 show-failed-attempts
 clock
@@ -8,10 +8,14 @@ indicator
 indicator-radius=100
 indicator-thickness=0
 inside-color=23658713
+inside-clear-color=23658713
+inside-ver-color=23658713
 line-color=00000000
+line-clear-color=00000000
+line-ver-color=00000000
 grace=2
 grace-no-mouse
 grace-no-touch
 datestr=%A %b %d
-fade-in="0.1"
+fade-in="0.3"
 ignore-empty-password
