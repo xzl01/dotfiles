@@ -207,3 +207,5 @@ You can use this script to softlink the configuration file to the user directory
 ```
 
 > If you removed some one package, you can run it again for remove softlink!
+
+Use `startde` to start desktop environment. It is also possible to uncomment `zsh/.zprofile` to automatically start the desktop environment.
