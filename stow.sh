@@ -53,6 +53,13 @@ if [ -f "bg.jpg" ]; then
 	ln -sf "$(pwd)/${target}" "${configdir}/${target}" && echo "ln ${target} done!"
 fi
 
+if [ -f "bg.gif" ]; then
+	target=bg.gif
+	configdir="${HOME}/.local/share/backgrounds"
+	[ ! -d "${configdir}" ] && mkdir "${configdir}"
+	ln -sf "$(pwd)/${target}" "${configdir}/${target}" && echo "ln ${target} done!"
+fi
+
 if [ -x "startde" ]; then
 	target=startde
 	configdir="${HOME}/.local/bin"
