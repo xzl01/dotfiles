@@ -2,7 +2,7 @@ screenshots
 daemonize
 show-failed-attempts
 clock
-effect-blur=55x5
+effect-blur=7x3
 font="Maple Mono SC NF"
 indicator
 indicator-radius=100
@@ -10,9 +10,12 @@ indicator-thickness=0
 inside-color=23658713
 inside-clear-color=23658713
 inside-ver-color=23658713
+inside-wrong-color=23658713
 line-color=00000000
 line-clear-color=00000000
 line-ver-color=00000000
+line-wrong-color=00000000
+text-wrong-color=FF000090
 grace=2
 grace-no-mouse
 grace-no-touch
