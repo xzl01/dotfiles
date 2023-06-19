@@ -120,6 +120,8 @@ fnm install <version/--latest>
 fnm default <version>
 ```
 
+> You need restart terminal for use fnm environment: `zsh/.env/fnm.sh`.
+
 ```bash
 sudo npm i -g neovim
 ```

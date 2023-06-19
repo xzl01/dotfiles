@@ -126,6 +126,8 @@ fnm install <version/--latest> --node-dist-mirror=https://npmmirror.com/mirrors/
 fnm default <version>
 ```
 
+> 安装完`nodejs`和`npm`后，需要重启终端来让环境变量生效，参考：`zsh/.env/fnm.sh`。
+
 安装完`nodejs`和`npm`后，再次更新配置，会自动使用国内源：
 
 ```bash
