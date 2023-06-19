@@ -70,8 +70,8 @@ zstyle ':completion:*:*:git:*' user-commands ${${(M)${(k)commands}:#git-*}/git-/
 zstyle ':completion:*:*:git:*' user-commands subrepo:'perform git-subrepo operations'
 
 # load env
-if [ -d ${HOME}/.env ]; then
-  for i in ${HOME}/.env/*.sh; do
+if [ -d ${HOME}/.zsh_env ]; then
+  for i in ${HOME}/.zsh_env/*.sh; do
     if [ -r $i ]; then
       . $i
     fi
