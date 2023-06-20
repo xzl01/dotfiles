@@ -22,13 +22,13 @@ logout:
 1. Hyprland 环境
 
 ```bash
-yay -S waybar wofi polkit-gnome hyprland wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+yay -S waybar wofi polkit-gnome hyprland wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst libnotify xdg-desktop-portal-wlr wf-recorder
 ```
 
 2. sway 环境
 
 ```bash
-yay -S waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst xdg-desktop-portal-wlr wf-recorder
+yay -S waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst libnotify xdg-desktop-portal-wlr wf-recorder
 ```
 
 - 窗管: [Hyprland](https://hyprland.org/)/[sway](https://swaywm.org/)
