@@ -3,12 +3,6 @@
 # Log WLR errors and logs to the hyprland log. Recommended
 export HYPRLAND_LOG_WLR=1
 
-# Tell XWayland to use a cursor theme
-export XCURSOR_THEME=Bibata-Modern-Classic
-
-# Set a cursor size
-export XCURSOR_SIZE=24
-
 # Example IME Support: fcitx
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
@@ -21,23 +15,23 @@ export QT_QPA_PLATFORM=wayland
 
 export GDK_SCALE=1
 
-# for nvidia
+# for nvidia, use hyprland-nvidia
 if [ "$(lsmod | grep -c nvidia)" -gt 1 ]; then
-    export LIBVA_DRIVER_NAME=nvidia
-    export GBM_BACKEND=nvidia-drm
-    export __GLX_VENDOR_LIBRARY_NAME=nvidia
-    export WLR_NO_HARDWARE_CURSORS=1
+	export LIBVA_DRIVER_NAME=nvidia
+	export GBM_BACKEND=nvidia-drm
+	export __GLX_VENDOR_LIBRARY_NAME=nvidia
+	export WLR_NO_HARDWARE_CURSORS=1
 fi
 
-# for nouveau
+# for nouveau, use hyprland-nvidia
 if [ "$(lsmod | grep -c nouveau)" -gt 1 ]; then
-    export LIBVA_DRIVER_NAME=nouveau
+	export LIBVA_DRIVER_NAME=nouveau
 fi
 
 if [ -x /usr/bin/Hyprland ]; then
-    exec Hyprland
+	exec Hyprland
 fi
 
 if [ -x /usr/bin/sway ]; then
-    exec sway
+	exec sway
 fi
