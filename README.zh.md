@@ -107,13 +107,16 @@ cd nvim && git switch new
 安装包：
 
 ```bash
-yay -S python-pip fnm
+yay -S python fnm
 ```
 
-更新环境变量和配置，安装完`pip`后，使用`./stow.sh`脚本会自动使用国内源：
+```bash
+python -m venv ~/.python_venv
+```
+
+重启终端以应用`python`的环境变量，参考：`zsh/.zsh_env/python-venv.sh`，此时可以使用`pip`，使用`./stow.sh`脚本会自动使用国内源：
 
 ```bash
-rehash
 ./stow.sh
 ```
 
@@ -126,7 +129,7 @@ fnm install <version/--latest> --node-dist-mirror=https://npmmirror.com/mirrors/
 fnm default <version>
 ```
 
-> 安装完`nodejs`和`npm`后，需要重启终端来让环境变量生效，参考：`zsh/.env/fnm.sh`。
+重启终端以应用`fnm`的环境变量，参考：`zsh/.zsh_env/fnm.sh`。
 
 安装完`nodejs`和`npm`后，再次更新配置，会自动使用国内源：
 

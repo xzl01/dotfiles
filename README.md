@@ -107,9 +107,14 @@ If use git http, modify `nvim/lua/core/settings`, set `use_ssh` to `false`.
 Install packages:
 
 ```bash
-yay -S python-pip fnm
-rehash
+yay -S python fnm
 ```
+
+```bash
+python -m venv ~/.python_venv
+```
+
+Restart Terminal for apply python environment, then you can use `pip` command. look: `zsh/.zsh_env/python-venv.sh`.
 
 ```bash
 pip install pynvim
@@ -120,7 +125,7 @@ fnm install <version/--latest>
 fnm default <version>
 ```
 
-> You need restart terminal for use fnm environment: `zsh/.env/fnm.sh`.
+Restart terminal for apply fnm environment, look: `zsh/.zsh_env/fnm.sh`.
 
 ```bash
 sudo npm i -g neovim
