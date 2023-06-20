@@ -193,13 +193,13 @@ if cannot install `ttf-maple-sc-nerd`, use the following method:
 ## Tools
 
 ```bash
-yay -S exa bat rsync btop
+yay -S exa bat rsync htop
 ```
 
 - [exa] instead ls and tree
 - [bat] instead cat
 - [rsync] instead cp and scp
-- [btop] instead top
+- [htop] instead top
 
 ## Configs Manager
 

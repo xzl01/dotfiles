@@ -203,13 +203,13 @@ yay -S ttf-maple-nerd ttf-maple-sc-nerd ttf-firacode-nerd
 ## 工具
 
 ```bash
-yay -S exa bat rsync btop
+yay -S exa bat rsync htop
 ```
 
 - [exa] 代替 ls and tree
 - [bat] 代替 cat
 - [rsync] 代替 cp and scp
-- [btop] 代替 top
+- [htop] 代替 top
 
 ## 配置管理
 
