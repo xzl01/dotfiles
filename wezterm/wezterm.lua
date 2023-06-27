@@ -12,7 +12,7 @@ end
 
 config.color_scheme = "Dracula (Official)"
 config.font = font
-config.font_size = 15
+config.font_size = 12
 config.enable_scroll_bar = false
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
