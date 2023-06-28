@@ -32,6 +32,7 @@ if [ $1 = "w" ]; then
 	if [ -x /usr/bin/Hyprland ]; then
 		# Log WLR errors and logs to the hyprland log. Recommended
 		export HYPRLAND_LOG_WLR=1
+		export WLR_NO_HARDWARE_CURSORS=1
 		exec Hyprland
 	fi
 
