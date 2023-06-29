@@ -50,8 +50,9 @@
         "tooltip": false
     },
     "clock": {
-        "format": " {:%H:%M}",
-        "format-alt": " {:%A, %B %d, %Y (%R)}",
+        "interval": 1,
+        "format": " {:%u, %F %T}",
+        "format-alt": " {:%T}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "year",
