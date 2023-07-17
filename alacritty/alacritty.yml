@@ -68,7 +68,7 @@ window:
   # macos 可以独占的配置:
   #   - SimpleFullscreen
   # startup_mode: SimpleFullscreen
-  startup_mode: Windowed
+  startup_mode: Maximized
 
   # 窗口标题
   title: Alacritty
