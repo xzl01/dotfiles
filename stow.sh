@@ -36,7 +36,6 @@ arr=(
 	"gdb"
 	"pip"
 	"npm"
-	"cargo"
 )
 for target in ${arr[@]}; do
 	if command -v ${target} >/dev/null 2>&1; then
@@ -46,23 +45,28 @@ for target in ${arr[@]}; do
 	fi
 done
 
-if [ -f "bg.jpg" ]; then
-	target=bg.jpg
-	configdir="${HOME}/.local/share/backgrounds"
-	[ ! -d "${configdir}" ] && mkdir "${configdir}"
-	ln -sf "$(pwd)/${target}" "${configdir}/${target}" && echo "ln ${target} done!"
-fi
+dict=(
+	["bg.jpg"]="${HOME}/.local/share/backgrounds"
+	["bg.gif"]="${HOME}/.local/share/backgrounds"
+	["startde"]="${HOME}/.local/bin"
+)
+for key in $(echo "${!dict[*]}"); do
+	value=${dict[$key]}
+	if [ -f ${key} ]; then
+		[ ! -d "${value}" ] && mkdir "${value}"
+		ln -sf "$(pwd)/${key}" "${value}/${key}" && echo "ln ${key} done!"
+	fi
+done
 
-if [ -f "bg.gif" ]; then
-	target=bg.gif
-	configdir="${HOME}/.local/share/backgrounds"
-	[ ! -d "${configdir}" ] && mkdir "${configdir}"
-	ln -sf "$(pwd)/${target}" "${configdir}/${target}" && echo "ln ${target} done!"
-fi
-
-if [ -x "startde" ]; then
-	target=startde
-	configdir="${HOME}/.local/bin"
-	[ ! -d "${configdir}" ] && mkdir "${configdir}"
-	ln -sf "$(pwd)/${target}" "${configdir}/${target}" && echo "ln ${target} done!"
-fi
+dict=(
+	["cargo"]="${HOME}/.cargo"
+)
+for key in $(echo "${!dict[*]}"); do
+	value=${dict[$key]}
+	if command -v ${key} >/dev/null 2>&1; then
+		[ ! -d "${value}" ] && mkdir "${value}"
+		for file in $(ls ${key}); do
+			ln -sf "$(pwd)/${key}/${file}" "${value}/${file}" && echo "ln ${key} done!"
+		done
+	fi
+done
