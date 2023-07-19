@@ -6,6 +6,7 @@ fi
 
 declare -A dict
 
+# use stow for command config, add: ["command"]="dir"
 dict=(
 	["Hyprland"]="hypr"
 	["nvim"]="nvim"
@@ -31,6 +32,7 @@ for key in $(echo "${!dict[*]}"); do
 	fi
 done
 
+# use stow for command config, add: "command"
 arr=(
 	"zsh"
 	"gdb"
@@ -45,6 +47,7 @@ for target in ${arr[@]}; do
 	fi
 done
 
+# use ln for generic config, add: ["file path"]="target path"
 dict=(
 	["bg.jpg"]="${HOME}/.local/share/backgrounds"
 	["bg.gif"]="${HOME}/.local/share/backgrounds"
@@ -58,6 +61,7 @@ for key in $(echo "${!dict[*]}"); do
 	fi
 done
 
+# use ln for command config, add ["command"]="target path"
 dict=(
 	["cargo"]="${HOME}/.cargo"
 )
