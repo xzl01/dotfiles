@@ -138,7 +138,7 @@ fnm default <version>
 ```
 
 ```bash
-sudo npm i -g neovim
+npm i -g neovim
 ```
 
 `pip`和`npm`只是 neovim 基本的环境配置，强烈建议跑完 lua 的配置后使用`:checkhealth`命令查看哪些命令未安装，可继续使用相应的包管理进行安装！

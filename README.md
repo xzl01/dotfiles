@@ -128,7 +128,7 @@ fnm default <version>
 Restart terminal for apply fnm environment, look: `zsh/.zsh_env/fnm.sh`.
 
 ```bash
-sudo npm i -g neovim
+npm i -g neovim
 ```
 
 `pip` and `npm` are just the basic environment configuration of neovim, it is highly recommended to use the `:checkhealth` command to see which commands are not installed after running the configuration of lua, you can continue to use the corresponding package management for installation!
