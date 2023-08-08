@@ -51,8 +51,8 @@
     },
     "clock": {
         "interval": 1,
-        "format": " {:%u, %F %T}",
-        "format-alt": " {:%T}",
+        "format": "󰔠  {:%u, %F %R}",
+        "format-alt": " {:%T}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "year",
@@ -84,8 +84,8 @@
         "interval": 10,
         "tooltip": true,
         "format": "{icon} {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
         "format-full": " {capacity}%",
         "format-icons": [
             "",
@@ -98,11 +98,11 @@
     "network": {
         "format": "{ifname}",
         "format-wifi": " {signalStrength}%",
-        "format-ethernet": " ",
+        "format-ethernet": "󰈀",
         "format-disconnected": "", //An empty format will hide the module.
-        "tooltip-format": " {ifname} via {gwaddr}",
+        "tooltip-format": "󰈀 {ifname} via {gwaddr}",
         "tooltip-format-wifi": " {ipaddr}/{cidr} ({signalStrength}%)",
-        "tooltip-format-ethernet": " {ipaddr}/{cidr}",
+        "tooltip-format-ethernet": "󰈀 {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "Disconnected",
         "on-click": "nm-connection-editor"
     },
@@ -159,14 +159,14 @@
     },
     "cpu": {
         "interval": 1,
-        "format": " {usage}%"
+        "format": "  {usage}%"
     },
     "memory": {
         "interval": 10,
-        "format": " {used:0.1f}G/{total:0.1f}G"
+        "format": "  {used:0.1f}G/{total:0.1f}G"
     },
     "bluetooth": {
-        "format-off": " {status}",
+        "format-off": "󰂲 {status}",
         "format": " {status}",
         "format-connected": " {device_alias}",
         "format-connected-battery": " {device_alias} {device_battery_percentage}%",
