@@ -82,32 +82,12 @@ git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 ## 编辑器 (Neovim)
 
-请阅读 [我的 nvim 配置](https://github.com/Groveer/nvimdots)
-
-默认使用 git ssh 协议，如果使用 http 协议，请先修改文件`.gitmodules`，并设置`url`:
-
-```
-https://github.com/Groveer/nvimdots.git
-```
-
-更新 git 子模块:
-
-```bash
-git submodule init && git submodule update
-```
-
-```bash
-cd nvim && git switch new
-```
-
-如果使用 http 协议，需要修改文件`nvim/lua/core/settings.lua`，并设置`use_ssh`为`false`。
-
-### 开发环境
+### 开发环境 (Neovim 配置依赖)
 
 安装包：
 
 ```bash
-yay -S python fnm
+yay -S python rust
 ```
 
 ```bash
@@ -122,6 +102,10 @@ python -m venv ~/.python_venv
 
 ```bash
 pip install pynvim
+```
+
+```bash
+cargo install fnm
 ```
 
 ```bash
@@ -142,6 +126,26 @@ npm i -g neovim
 ```
 
 `pip`和`npm`只是 neovim 基本的环境配置，强烈建议跑完 lua 的配置后使用`:checkhealth`命令查看哪些命令未安装，可继续使用相应的包管理进行安装！
+
+### 安装 neovim 配置
+
+默认使用 git ssh 协议，如果使用 http 协议，请先修改文件`.gitmodules`，并设置`url`:
+
+```
+https://github.com/Groveer/nvimdots.git
+```
+
+更新 git 子模块:
+
+```bash
+git submodule init && git submodule update
+```
+
+```bash
+cd nvim && git switch new
+```
+
+如果使用 http 协议，需要修改文件`nvim/lua/core/settings.lua`，并设置`use_ssh`为`false`。
 
 ## 浏览器
 

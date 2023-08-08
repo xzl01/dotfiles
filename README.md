@@ -82,7 +82,42 @@ git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 ## Editor (Neovim)
 
-Please read [my nvim config](https://github.com/Groveer/nvimdots)
+### Developer Environment (Neovim config dependeies)
+
+Install packages:
+
+```bash
+yay -S python rust
+```
+
+```bash
+python -m venv ~/.python_venv
+```
+
+Restart Terminal for apply python environment, then you can use `pip` command. look: `zsh/.zsh_env/python-venv.sh`.
+
+```bash
+pip install pynvim
+```
+
+```bash
+cargo install fnm
+```
+
+```bash
+fnm install <version/--latest>
+fnm default <version>
+```
+
+Restart terminal for apply fnm environment, look: `zsh/.zsh_env/fnm.sh`.
+
+```bash
+npm i -g neovim
+```
+
+`pip` and `npm` are just the basic environment configuration of neovim, it is highly recommended to use the `:checkhealth` command to see which commands are not installed after running the configuration of lua, you can continue to use the corresponding package management for installation!
+
+### install neovim config
 
 Default use git ssh, if you use http, modify `.gitmodules`, set `url`:
 
@@ -101,37 +136,6 @@ cd nvim && git switch new
 ```
 
 If use git http, modify `nvim/lua/core/settings`, set `use_ssh` to `false`.
-
-### Developer Environment
-
-Install packages:
-
-```bash
-yay -S python fnm
-```
-
-```bash
-python -m venv ~/.python_venv
-```
-
-Restart Terminal for apply python environment, then you can use `pip` command. look: `zsh/.zsh_env/python-venv.sh`.
-
-```bash
-pip install pynvim
-```
-
-```bash
-fnm install <version/--latest>
-fnm default <version>
-```
-
-Restart terminal for apply fnm environment, look: `zsh/.zsh_env/fnm.sh`.
-
-```bash
-npm i -g neovim
-```
-
-`pip` and `npm` are just the basic environment configuration of neovim, it is highly recommended to use the `:checkhealth` command to see which commands are not installed after running the configuration of lua, you can continue to use the corresponding package management for installation!
 
 ## Browser
 
