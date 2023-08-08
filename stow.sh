@@ -34,6 +34,7 @@ done
 
 # use stow for command config, add: "command"
 arr=(
+	"bash"
 	"zsh"
 	"gdb"
 	"pip"
