@@ -1,19 +1,11 @@
 #!/bin/sh
 
-# Log WLR errors and logs to the hyprland log. Recommended
-export HYPRLAND_LOG_WLR=1
-
 # Example IME Support: fcitx
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export SDL_IM_MODULE=fcitx
 export GLFW_IM_MODULE=ibus
-
-export MOZ_ENABLE_WAYLAND=1
-export QT_QPA_PLATFORM=wayland
-
-export GDK_SCALE=1
 
 # for nvidia, use hyprland-nvidia
 if [ "$(lsmod | grep -c nvidia)" -gt 1 ]; then
@@ -28,10 +20,22 @@ if [ "$(lsmod | grep -c nouveau)" -gt 1 ]; then
 	export LIBVA_DRIVER_NAME=nouveau
 fi
 
-if [ -x /usr/bin/Hyprland ]; then
-	exec Hyprland
+if [ $1 = "x" ]; then
+	exec startx
 fi
 
-if [ -x /usr/bin/sway ]; then
-	exec sway
+if [ $1 = "w" ]; then
+	export MOZ_ENABLE_WAYLAND=1
+	export QT_QPA_PLATFORM=wayland
+
+	export GDK_SCALE=1
+	if [ -x /usr/bin/Hyprland ]; then
+		# Log WLR errors and logs to the hyprland log. Recommended
+		export HYPRLAND_LOG_WLR=1
+		exec Hyprland
+	fi
+
+	if [ -x /usr/bin/sway ]; then
+		exec sway
+	fi
 fi
