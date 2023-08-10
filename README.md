@@ -56,6 +56,10 @@ I use the Kitty:
 yay -S kitty
 ```
 
+### bash
+
+Use `./show.h` for apply bash environment, theme and git plugin form [oh my bash](https://github.com/ohmybash/oh-my-bash).
+
 ### zsh
 
 Install zsh:
@@ -219,4 +223,4 @@ You can use this script to softlink the configuration file to the user directory
 
 > If you removed some one package, you can run it again for remove softlink!
 
-Use `startde` to start desktop environment. It is also possible to uncomment `zsh/.zprofile` to automatically start the desktop environment.
+Use `startde` to start desktop environment. It is also possible to uncomment `bash/.bash_profile`(uncomment default) or `zsh/.zprofile` to automatically start the desktop environment.

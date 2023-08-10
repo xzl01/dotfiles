@@ -56,6 +56,10 @@ yay -S waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-ef
 yay -S kitty
 ```
 
+### bash
+
+使用`./stow.sh`来应用 bash 环境变量，其中主题和 git 插件来自[oh my bash](https://github.com/ohmybash/oh-my-bash)。
+
 ### zsh
 
 安装 zsh:
@@ -229,4 +233,4 @@ yay -S stow
 
 > 如果删除了某个包，可以再次运行该脚本，将会删除该包的软链！
 
-使用`startde`来启动桌面环境，也可以取消`zsh/.zprofile`中的注释来自动启动桌面环境。
+使用`startde`来启动桌面环境，也可以取消`bash/.bash_profile`(默认取消注释)或`zsh/.zprofile`中的注释来自动启动桌面环境。
