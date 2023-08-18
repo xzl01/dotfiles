@@ -136,10 +136,8 @@ git submodule init && git submodule update
 ```
 
 ```bash
-cd nvim && git switch new
+cd nvim && git switch v2.0
 ```
-
-If use git http, modify `nvim/lua/core/settings`, set `use_ssh` to `false`.
 
 ## Browser
 

@@ -146,10 +146,8 @@ git submodule init && git submodule update
 ```
 
 ```bash
-cd nvim && git switch new
+cd nvim && git switch v2.0
 ```
-
-如果使用 http 协议，需要修改文件`nvim/lua/core/settings.lua`，并设置`use_ssh`为`false`。
 
 ## 浏览器
 
