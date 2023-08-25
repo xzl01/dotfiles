@@ -37,13 +37,3 @@ if command -v rsync >/dev/null 2>&1; then
 fi
 
 alias date-changelog="LC_ALL=C date +'%a, %d %b %Y %T %z'"
-
-# load osh
-if [ -d ${HOME}/.bash_env/osh ]; then
-	for i in ${HOME}/.bash_env/osh/*.sh; do
-		if [ -r $i ]; then
-			. $i
-		fi
-	done
-	unset i
-fi

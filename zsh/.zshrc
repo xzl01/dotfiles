@@ -8,13 +8,16 @@ fi
 # 基本设置
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=5000
-SAVEHIST=1000
+HISTSIZE=2000
+SAVEHIST=3000
 setopt autocd
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
+
+autoload bashcompinit
+bashcompinit
 
 autoload -Uz compinit
 compinit

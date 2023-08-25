@@ -2,6 +2,9 @@
 # ~/.bashrc
 #
 
+HISTFILE=~/.histfile
+HISTSIZE=2000
+SAVEHIST=3000
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
