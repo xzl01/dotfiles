@@ -1,14 +1,5 @@
 #!/bin/sh
 
-# Log WLR errors and logs to the hyprland log. Recommended
-export HYPRLAND_LOG_WLR=1
-
-# Tell XWayland to use a cursor theme
-export XCURSOR_THEME=Bibata-Modern-Classic
-
-# Set a cursor size
-export XCURSOR_SIZE=24
-
 # Example IME Support: fcitx
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
@@ -16,22 +7,16 @@ export XMODIFIERS=@im=fcitx
 export SDL_IM_MODULE=fcitx
 export GLFW_IM_MODULE=ibus
 
-export MOZ_ENABLE_WAYLAND=1
-export QT_QPA_PLATFORM=wayland
-
-export GDK_SCALE=1
-
-# for nvidia
+# for nvidia, use hyprland-nvidia
 if [ "$(lsmod | grep -c nvidia)" -gt 1 ]; then
-    export LIBVA_DRIVER_NAME=nvidia
-    export GBM_BACKEND=nvidia-drm
-    export __GLX_VENDOR_LIBRARY_NAME=nvidia
-    export WLR_NO_HARDWARE_CURSORS=1
+	export LIBVA_DRIVER_NAME=nvidia
+	export GBM_BACKEND=nvidia-drm
+	export __GLX_VENDOR_LIBRARY_NAME=nvidia
 fi
 
-# for nouveau
+# for nouveau, use hyprland-nvidia
 if [ "$(lsmod | grep -c nouveau)" -gt 1 ]; then
-    export LIBVA_DRIVER_NAME=nouveau
+	export LIBVA_DRIVER_NAME=nouveau
 fi
 
 # for nvidia
@@ -43,10 +28,21 @@ if [ "$(lsmod | grep -c nvidia)" -ne 0 ]; then
     export WLR_NO_HARDWARE_CURSORS=1
 fi
 
+# for nouveau
+if [ "$(lsmod | grep -c nouveau)" -gt 1 ]; then
+	export LIBVA_DRIVER_NAME=nouveau
+fi
+
+export GDK_SCALE=1
 if [ -x /usr/bin/Hyprland ]; then
-    exec Hyprland
+	# Log WLR errors and logs to the hyprland log. Recommended
+	export HYPRLAND_LOG_WLR=1
+	# Fix do't display cursor on mirror mode
+	export WLR_NO_HARDWARE_CURSORS=1
+	export WLR_RENDERER=vulkan
+	exec Hyprland
 fi
 
 if [ -x /usr/bin/sway ]; then
-    exec sway
+	exec sway
 fi

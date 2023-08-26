@@ -70,6 +70,11 @@ window#waybar.hidden {
     color: #E8A2AF;
 }
 
+#custom-power {
+  color: #db4b4b;
+  margin-right: 10px;
+}
+
 #network {
 	margin-top: 6px;
 	margin-left: 8px;
@@ -140,12 +145,6 @@ window#waybar.hidden {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
-
-@keyframes blink {
-  to {
-    color: #bf616a;
-  }
 }
 
 #backlight {
