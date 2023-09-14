@@ -13,12 +13,12 @@ fi
 # export https_proxy=$http_proxy
 # export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 
-# need exa package v0.9.0 or higher
-if command -v exa >/dev/null 2>&1; then
-	alias ls="exa --icons"
-	alias l="exa -al --icons"
-	alias ll="exa -l --icons"
-	alias tree="exa -T --icons"
+# need exa package v0.11.0 or higher
+if command -v eza >/dev/null 2>&1; then
+	alias ls="eza --icons"
+	alias l="eza -al --icons"
+	alias ll="eza -l --icons"
+	alias tree="eza -T --icons"
 fi
 
 # need bat package
