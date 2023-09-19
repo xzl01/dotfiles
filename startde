@@ -19,19 +19,26 @@ if [ "$(lsmod | grep -c nouveau)" -gt 1 ]; then
 	export LIBVA_DRIVER_NAME=nouveau
 fi
 
-export MOZ_ENABLE_WAYLAND=1
-export QT_QPA_PLATFORM=wayland
-
-export GDK_SCALE=1
-if [ -x /usr/bin/Hyprland ]; then
-	# Log WLR errors and logs to the hyprland log. Recommended
-	export HYPRLAND_LOG_WLR=1
-	# Fix do't display cursor on mirror mode
-	export WLR_NO_HARDWARE_CURSORS=1
-	export WLR_RENDERER=vulkan
-	exec Hyprland
+if [ $1 = "x" ]; then
+	exec startx
 fi
 
-if [ -x /usr/bin/sway ]; then
-	exec sway
+if [ $1 = "w" ]; then
+
+	export MOZ_ENABLE_WAYLAND=1
+	export QT_QPA_PLATFORM=wayland
+
+	export GDK_SCALE=1
+	if [ -x /usr/bin/Hyprland ]; then
+		# Log WLR errors and logs to the hyprland log. Recommended
+		export HYPRLAND_LOG_WLR=1
+		# Fix do't display cursor on mirror mode
+		export WLR_NO_HARDWARE_CURSORS=1
+		export WLR_RENDERER=vulkan
+		exec Hyprland
+	fi
+
+	if [ -x /usr/bin/sway ]; then
+		exec sway
+	fi
 fi
