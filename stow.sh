@@ -57,7 +57,7 @@ dict=(
 for key in $(echo "${!dict[*]}"); do
 	value=${dict[$key]}
 	if [ -f ${key} ]; then
-		[ ! -d "${value}" ] && mkdir "${value}"
+		[ ! -d "${value}" ] && mkdir -p "${value}"
 		ln -sf "$(pwd)/${key}" "${value}/${key}" && echo "ln ${key} done!"
 	fi
 done
@@ -69,7 +69,7 @@ dict=(
 for key in $(echo "${!dict[*]}"); do
 	value=${dict[$key]}
 	if command -v ${key} >/dev/null 2>&1; then
-		[ ! -d "${value}" ] && mkdir "${value}"
+		[ ! -d "${value}" ] && mkdir -p "${value}"
 		for file in $(ls ${key}); do
 			ln -sf "$(pwd)/${key}/${file}" "${value}/${file}" && echo "ln ${key} done!"
 		done
