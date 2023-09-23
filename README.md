@@ -126,7 +126,7 @@ npm i -g neovim
 Default use git ssh, if you use http, modify `.gitmodules`, set `url`:
 
 ```
-https://github.com/Groveer/nvimdots.git
+https://github.com/Groveer/NvChad.git
 ```
 
 Update git submodule:

@@ -136,7 +136,7 @@ npm i -g neovim
 默认使用 git ssh 协议，如果使用 http 协议，请先修改文件`.gitmodules`，并设置`url`:
 
 ```
-https://github.com/Groveer/nvimdots.git
+https://github.com/Groveer/NvChad.git
 ```
 
 更新 git 子模块:
