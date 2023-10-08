@@ -29,6 +29,10 @@ if [ $1 = "w" ]; then
 	export QT_QPA_PLATFORM=wayland
 
 	export GDK_SCALE=1
+	if [ -x /usr/bin/startplasma-wayland ]; then
+		exec startplasma-wayland
+	fi
+
 	if [ -x /usr/bin/Hyprland ]; then
 		# Log WLR errors and logs to the hyprland log. Recommended
 		export HYPRLAND_LOG_WLR=1
