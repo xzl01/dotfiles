@@ -15,10 +15,10 @@ fi
 
 # need exa package v0.11.0 or higher
 if command -v eza >/dev/null 2>&1; then
-	alias ls="eza --icons"
-	alias l="eza -al --icons"
-	alias ll="eza -l --icons"
-	alias tree="eza -T --icons"
+	alias ls="eza --icons=auto"
+	alias l="eza -al --icons=auto"
+	alias ll="eza -l --icons=auto"
+	alias tree="eza -T --icons=auto"
 fi
 
 # need bat package
