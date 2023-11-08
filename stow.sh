@@ -21,6 +21,7 @@ dict=(
 	["dunst"]="dunst"
 	["neofetch"]="neofetch"
 	["wlogout"]="wlogout"
+	["ranger"]="ranger"
 )
 for key in $(echo "${!dict[*]}"); do
 	target=${dict[$key]}
