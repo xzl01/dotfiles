@@ -1,6 +1,7 @@
 #!/bin/bash
 
 if [ ! -x "/usr/bin/stow" ]; then
+	echo -e "\e[33m Cannot found stow, please install it!\e[0m"
 	exit
 fi
 
