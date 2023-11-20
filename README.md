@@ -84,28 +84,24 @@ git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git
 git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git
 ```
 
-## Editor (Neovim)
+## Editor/IDE (Neovim)
 
 ### Developer Environment (Neovim config dependeies)
 
 Install packages:
 
 ```bash
-yay -S python rust
+yay -S python fnm
 ```
 
 ```bash
 python -m venv ~/.python_venv
 ```
 
-Restart Terminal for apply python environment, then you can use `pip` command. look: `zsh/.zsh_env/python-venv.sh`.
+Restart Terminal for apply python environment, then you can use `pip` command. look: `shell_env/50-python-venv.sh`.
 
 ```bash
 pip install pynvim
-```
-
-```bash
-cargo install fnm
 ```
 
 ```bash
@@ -113,7 +109,7 @@ fnm install <version/--latest>
 fnm default <version>
 ```
 
-Restart terminal for apply fnm environment, look: `zsh/.zsh_env/fnm.sh`.
+Restart terminal for apply fnm environment, look: `shell_env/50-fnm.sh`.
 
 ```bash
 npm i -g neovim

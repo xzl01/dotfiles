@@ -91,14 +91,14 @@ git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git
 安装包：
 
 ```bash
-yay -S python rust
+yay -S python fnm
 ```
 
 ```bash
 python -m venv ~/.python_venv
 ```
 
-重启终端以应用`python`的环境变量，参考：`zsh/.zsh_env/python-venv.sh`，此时可以使用`pip`，使用`./stow.sh`脚本会自动使用国内源：
+重启终端以应用`python`的环境变量，参考：`shell_env/50-python-venv.sh`，此时可以使用`pip`，使用`./stow.sh`脚本会自动使用国内源：
 
 ```bash
 ./stow.sh
@@ -109,15 +109,11 @@ pip install pynvim
 ```
 
 ```bash
-cargo install fnm
-```
-
-```bash
 fnm install <version/--latest> --node-dist-mirror=https://npmmirror.com/mirrors/node
 fnm default <version>
 ```
 
-重启终端以应用`fnm`的环境变量，参考：`zsh/.zsh_env/fnm.sh`。
+重启终端以应用`fnm`的环境变量，参考：`shell_env/fnm.sh`。
 
 安装完`nodejs`和`npm`后，再次更新配置，会自动使用国内源：
 
