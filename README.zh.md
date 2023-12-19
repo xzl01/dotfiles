@@ -162,7 +162,7 @@ yay -S microsoft-edge-stable-bin
 在 wayland 环境下:
 
 ```bash
--enable-features=UseOzonePlatform -ozone-platform=wayland
+--enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime
 ```
 
 代理:
@@ -205,10 +205,10 @@ yay -S ttf-maple-nerd ttf-maple-sc-nerd ttf-firacode-nerd
 ## 工具
 
 ```bash
-yay -S exa bat rsync htop
+yay -S eza bat rsync htop
 ```
 
-- [exa] 代替 ls and tree
+- [eza] 代替 ls and tree
 - [bat] 代替 cat
 - [rsync] 代替 cp and scp
 - [htop] 代替 top

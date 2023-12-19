@@ -152,7 +152,7 @@ yay -S microsoft-edge-stable-bin
 in wayland:
 
 ```bash
--enable-features=UseOzonePlatform -ozone-platform=wayland
+--enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime
 ```
 
 proxy:
@@ -195,10 +195,10 @@ if cannot install `ttf-maple-sc-nerd`, use the following method:
 ## Tools
 
 ```bash
-yay -S exa bat rsync htop
+yay -S eza bat rsync htop
 ```
 
-- [exa] instead ls and tree
+- [eza] instead ls and tree
 - [bat] instead cat
 - [rsync] instead cp and scp
 - [htop] instead top
