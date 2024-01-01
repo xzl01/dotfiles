@@ -1,11 +1,5 @@
 #!/bin/sh
 
-# Example IME Support: fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
-export SDL_IM_MODULE=fcitx
-export GLFW_IM_MODULE=ibus
-
 # for nvidia, use hyprland-nvidia
 if [ "$(lsmod | grep -c nvidia)" -gt 1 ]; then
 	export LIBVA_DRIVER_NAME=nvidia
@@ -24,20 +18,11 @@ fi
 
 if [ $1 = "w" ]; then
 
-	export MOZ_ENABLE_WAYLAND=1
-	export QT_QPA_PLATFORM=wayland
-
-	export GDK_SCALE=1
 	if [ -x /usr/bin/startplasma-wayland ]; then
 		exec startplasma-wayland
 	fi
 
 	if [ -x /usr/bin/Hyprland ]; then
-		# Log WLR errors and logs to the hyprland log. Recommended
-		export HYPRLAND_LOG_WLR=1
-		# Fix do't display cursor on mirror mode
-		export WLR_NO_HARDWARE_CURSORS=1
-		export WLR_RENDERER=vulkan
 		exec Hyprland
 	fi
 
