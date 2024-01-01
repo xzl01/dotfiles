@@ -2,7 +2,7 @@
 configuration {
     modi:                        "drun";
     show-icons:                  false;
-    font:                        "JetBrainsMono Nerd Font 9";
+    font:                        "Maple Mono SC NF 12";
 }
 
 @theme "~/.config/rofi/themes/theme.rasi"
