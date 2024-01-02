@@ -71,3 +71,9 @@ truncation_symbol = "./"
 
 [python]
 symbol = " "
+
+[lua]
+symbol = " "
+
+[nodejs]
+symbol = " "
