@@ -101,7 +101,13 @@ if command -s wlfreerdp > /dev/null
   end
 end
 
-starship init fish | source
+if command -s starship > /dev/null
+  starship init fish | source
+end
+
+if command -s zoxide > /dev/null
+  zoxide init fish | source
+end
 
 # function fish_prompt
 #   set_color cyan; echo (pwd) 
