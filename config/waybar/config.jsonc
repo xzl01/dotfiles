@@ -6,7 +6,7 @@
     "layer": "top",
     "position": "bottom",
     "mod": "dock",
-    "height": 28,
+    "height": 31,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -14,8 +14,8 @@
 
 // positions generated based on config.ctl //
 
-	"modules-left": ["custom/padd","custom/l_end","cpu","memory","custom/gpuinfo","custom/r_end","custom/l_end","idle_inhibitor","clock","custom/r_end","custom/padd"],
-	"modules-center": ["custom/padd","custom/l_end","hyprland/workspaces","hyprland/window","custom/r_end","custom/padd"],
+	"modules-left": ["custom/padd","custom/l_end","cpu","memory","custom/gpuinfo","custom/r_end","custom/l_end","idle_inhibitor","clock","custom/r_end","custom/l_end","hyprland/workspaces","custom/r_end","custom/padd"],
+	"modules-center": ["custom/padd","custom/l_end","wlr/taskbar","custom/r_end","custom/padd"],
 	"modules-right": ["custom/padd","custom/l_end","backlight","network","bluetooth","pulseaudio","pulseaudio#microphone","custom/updates","custom/r_end","custom/l_end","tray","battery","custom/r_end","custom/l_end","custom/wallchange","custom/mode","custom/wbar","custom/cliphist","custom/power","custom/r_end","custom/padd"],
 
 
@@ -90,21 +90,21 @@
       "on-click": "activate",
       "persistent-workspaces": {}
     },
-    "hyprland/window": {
-      "format": "  {}",
-      "separate-outputs": true,
-      "rewrite": {
-        "guo@Arch:(.*)": "$1 ",
-        "(.*) — Mozilla Firefox": "$1 󰈹",
-        "(.*)Mozilla Firefox": "Firefox 󰈹",
-        "(.*) - Visual Studio Code": "$1 󰨞",
-        "(.*)Visual Studio Code": "Code 󰨞",
-        "(.*) — Dolphin": "$1 󰉋",
-        "(.*)Spotify": "Spotify 󰓇",
-        "(.*)Steam": "Steam 󰓓"
-      },
-      "max-length": 1000
-    },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 18,
+    "icon-theme": "Tela-circle-dracula",
+    "spacing": 0,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+      "Alacritty"
+    ],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    }
+  },
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
@@ -117,9 +117,9 @@
     "network": {
       // "interface": "wlp2*", // (Optional) To force the use of this interface
       "format-wifi": "󰤨 {essid}",
-      "format-ethernet": "󱘖 Wired",
-      "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
-      "format-linked": "󱘖 {ifname} (No IP)",
+      "format-ethernet": "󰈀 Wired",
+      "tooltip-format": "󰈀 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+      "format-linked": "󰈀 {ifname} (No IP)",
       "format-disconnected": " Disconnected",
       "format-alt": "󰤨 {signalStrength}%",
       "interval": 5
@@ -169,13 +169,13 @@
     "custom/updates": {
       "exec": "~/.config/hypr/scripts/systemupdate.sh",
       "return-type": "json",
-      "format": "󰮯 {}",
+      "format": "󰚰 {}",
       "on-click": "~/.config/hypr/scripts/systemupdate.sh up",
       "interval": 86400, // once every day
       "tooltip": true,
     },
     "tray": {
-      "icon-size": 16,
+      "icon-size": 18,
       "spacing": 5
     },
     "battery": {
@@ -192,7 +192,7 @@
     },
 
     "custom/wallchange": {
-      "format": "󰸉{}",
+      "format": "󰸉 {}",
       "exec": "echo ; echo 󰆊 switch wallpaper",
       "on-click": "~/.config/hypr/scripts/swwwallpaper.sh -n",
       "on-click-right": "~/.config/hypr/scripts/swwwallpaper.sh -p",
@@ -201,17 +201,16 @@
       "tooltip": true
     },
     "custom/mode": {
-        "format": "{}",
-        "exec": "echo ; echo 󰟡 switch mode",
-        "on-click": "~/.config/hypr/scripts/themeswitch.sh -n",
-        "on-click-right": "~/.config/hypr/scripts/themeswitch.sh -p",
-        "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/themeselect.sh",
-        "interval" : 86400, // once every day
-        "tooltip": true
+      "format": " {}",
+      "exec": "echo ; echo 󰟡 switch mode",
+      "on-click": "~/.config/hypr/scripts/themeswitch.sh -n",
+      "on-click-right": "~/.config/hypr/scripts/themeswitch.sh -p",
+      "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/themeselect.sh",
+      "interval": 86400, // once every day
+      "tooltip": true
     },
-
     "custom/wbar": {
-      "format": "{}", //    //
+      "format": " {}", //    //
       "exec": "echo ; echo  switch menubar //  dock",
       "on-click": "~/.config/hypr/scripts/wbarconfgen.sh n",
       "on-click-right": "~/.config/hypr/scripts/wbarconfgen.sh p",
@@ -220,7 +219,7 @@
       "tooltip": true
     },
     "custom/cliphist": {
-      "format": "{}",
+      "format": " {}",
       "exec": "echo ; echo 󰅇 clipboard history",
       "on-click": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh c",
       "on-click-right": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh d",
@@ -229,7 +228,7 @@
       "tooltip": true
     },
     "custom/power": {
-      "format": "{}",
+      "format": " {}",
       "exec": "echo ; echo  logout",
       "on-click": "~/.config/hypr/scripts/logoutlaunch.sh 2",
       "interval": 86400, // once every day
