@@ -2,87 +2,160 @@
 
 [English](README.md) | 中文
 
-## 截图
+## Themes
 
-neofetch:
-![neofetch](https://github.com/Groveer/dotfiles/blob/screenshots/1.png?raw=true)
+<br><div align="center"><table><tr><td><img width="60" src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/hyprdots_logo.png"></td><td>
 
-wofi:
-![nvim](https://github.com/Groveer/dotfiles/blob/screenshots/2.png?raw=true)
+[![Catppuccin-Mocha](https://placehold.co/130x30/b4befe/11111b?text=Catppuccin-Mocha&font=Oswald)](#-Catppuccin-Mocha)
+[![Catppuccin-Latte](https://placehold.co/130x30/dd7878/eff1f5?text=Catppuccin-Latte&font=Oswald)](#-Catppuccin-Latte)
+[![Decay-Green](https://placehold.co/130x30/90ceaa/151720?text=Decay-Green&font=Oswald)](#-Decay-Green)
+[![Rosé-Pine](https://placehold.co/130x30/c4a7e7/191724?text=Rosé-Pine&font=Oswald)](#-Rosé-Pine)
+[![Tokyo-Night](https://placehold.co/130x30/7aa2f7/24283b?text=Tokyo-Night&font=Oswald)](#-Tokyo-Night)<br>
+[![Material-Sakura](https://placehold.co/130x30/f2e9e1/b4637a?text=Material-Sakura&font=Oswald)](#-Material-Sakura)
+[![Graphite-Mono](https://placehold.co/130x30/a6a6a6/262626?text=Graphite-Mono&font=Oswald)](#-Graphite-Mono)
+[![Cyberpunk-Edge](https://placehold.co/130x30/fada16/000000?text=Cyberpunk-Edge&font=Oswald)](#-Cyberpunk-Edge)
+[![Frosted-Glass](https://placehold.co/130x30/7ed6ff/1e4c84?text=Frosted-Glass&font=Oswald)](#-Frosted-Glass-by-T-crypt)
+[![Gruvbox-Retro](https://placehold.co/130x30/475437/B5CC97?text=Gruvbox-Retro&font=Oswald)](#-Gruvbox-Retro-by-T-crypt)
 
-logout:
-![logout](https://github.com/Groveer/dotfiles/blob/screenshots/3.png?raw=true)
+</td></tr></table></div><br><table><td><br>
 
-**在 Archlinux 中可以拥有与本人一致的体验！**
+> #### **_<div align = right>// Catppuccin-Mocha</div>_**
 
-## 桌面环境（Wayland 原生）
+![Catppuccin-Mocha#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_mocha_1.png)
+![Catppuccin-Mocha#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_mocha_2.png)<br><br>
 
-**在 Archlinux 中安装(需要 aur):**
+> #### **_<div align = right>// Catppuccin-Latte</div>_**
 
-1. Hyprland 环境
+![Catppuccin-Latte#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_latte_1.png)
+![Catppuccin-Latte#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_latte_2.png)<br><br>
+
+> #### **_<div align = right>// Decay-Green</div>_**
+>
+> ![Decay-Green#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_decay_1.png) > ![Decay-Green#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_decay_2.png)<br><br>
+
+> #### **_<div align = right>// Rosé-Pine</div>_**
+>
+> ![Rosé-Pine#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_rosine_1.png) > ![Rosé-Pine#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_rosine_2.png)<br><br>
+
+> #### **_<div align = right>// Tokyo-Night</div>_**
+>
+> ![Tokyo-Night#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_tokyo_1.png) > ![Tokyo-Night#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_tokyo_2.png)<br><br>
+
+> #### **_<div align = right>// Material-Sakura</div>_**
+>
+> ![Material-Sakura#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_maura_1.png) > ![Material-Sakura#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_maura_2.png)<br><br>
+
+> #### **_<div align = right>// Graphite-Mono</div>_**
+>
+> ![Graphite-Mono#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_graph_1.png) > ![Graphite-Mono#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_graph_2.png)<br><br>
+
+> #### **_<div align = right>// Cyberpunk-Edge</div>_**
+>
+> ![Cyberpunk-Edge#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_cedge_1.png) > ![Cyberpunk-Edge#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_cedge_2.png)<br><br>
+
+> #### **_<div align = right>// Frosted-Glass by T-crypt</div>_**
+>
+> ![Frosted-Glass#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_frosted_1.png) > ![Frosted-Glass#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_frosted_2.png)<br><br>
+
+> #### **_<div align = right>// Gruvbox-Retro by T-crypt</div>_**
+>
+> ![Gruvbox-Retro#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_gruvbox_1.png) > ![Gruvbox-Retro#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_gruvbox_2.png)
+
+## Styles
+
+|                                                  Theme Select                                                  |
+| :------------------------------------------------------------------------------------------------------------: |
+| ![Theme Select](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_select.png) |
+
+|                                                  Wallpaper Select                                                  |
+| :----------------------------------------------------------------------------------------------------------------: |
+| ![Wallpaper Select](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/walls_select.png) |
+
+|                                                   Launcher Style Select                                                   |
+| :-----------------------------------------------------------------------------------------------------------------------: |
+| ![Launcher Style Select](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_sel.png) |
+
+|                                                Launcher Styles                                                 |
+| :------------------------------------------------------------------------------------------------------------: |
+| ![rofi style#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_1.png) |
+| ![rofi style#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_2.png) |
+| ![rofi style#3](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_3.png) |
+| ![rofi style#4](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_4.png) |
+| ![rofi style#5](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_5.png) |
+| ![rofi style#6](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_6.png) |
+| ![rofi style#7](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_7.png) |
+| ![rofi style#8](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_8.png) |
+
+|                                                   Wlogout Menu                                                   |
+| :--------------------------------------------------------------------------------------------------------------: |
+| ![Wlogout Menu#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/wlog_style_1.png) |
+| ![Wlogout Menu#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/wlog_style_2.png) |
+
+|                                                   Game Launchers                                                    |
+| :-----------------------------------------------------------------------------------------------------------------: |
+| ![Game Launchers#1](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/game_launch_1.png) |
+| ![Game Launchers#2](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/game_launch_2.png) |
+| ![Game Launchers#3](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/game_launch_3.png) |
+| ![Game Launchers#4](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/game_launch_4.png) |
+| ![Game Launchers#5](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/game_launch_5.png) |
+
+**在 Archlinux 上可以拥有与本人一致的体验**
+
+## Desktop Environment（Native Wayland）
+
+**在 Archlinux 上安装包（需要 aur）:**
+
+1. shell
 
 ```bash
-yay -S waybar wofi polkit-gnome hyprland wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst libnotify xdg-desktop-portal-wlr wf-recorder wlogout
+yay -S eza fish rsync bat stow starship htop
 ```
 
-2. sway 环境
+2. fonts
+
+```
+yay -S ttf-firacode-nerd ttf-maple-sc-nerd
+```
+
+3. utils
 
 ```bash
-yay -S waybar wofi polkit-gnome sway-im wl-clipboard swayidle swaybg swaylock-effects-git brightnessctl playerctl grim slurp dunst libnotify xdg-desktop-portal-wlr wf-recorder wlogout
+yay -S blueman qt5-wayland qt6-wayland
 ```
 
-- 窗管: [Hyprland](https://hyprland.org/)/[sway](https://swaywm.org/)
-- 任务栏: [waybar](https://github.com/Alexays/Waybar)
-- 壁纸: [swaybg](https://github.com/swaywm/swaybg)/[mpvpaper](https://github.com/GhostNaN/mpvpaper)
-- 锁屏: [swayidle](https://github.com/swaywm/swayidle) [swaylock-effects](https://github.com/mortie/swaylock-effects) # Super + L
-- 登出: [wlogout](https://github.com/ArtsyMacaw/wlogout) # Ctrl + Alt + Delete
-- 启动: [wofi](https://hg.sr.ht/~scoopta/wofi) # Super + D
-- 截图: [grim](https://sr.ht/~emersion/grim/) [slurp](https://github.com/emersion/slurp) # Ctrl + Alt + A
-- 录屏: [wf-recorder](https://github.com/ammen99/wf-recorder) # Ctrl + Alt + S (再次运行会停止录屏)
-- 剪切板: [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
-- 消息通知: [dunst](https://github.com/dunst-project/dunst)
-
-## 终端 (Kitty/Wezterm/Alacritty)
-
-你可以选择任意一个:
-
-- [Kitty](https://sw.kovidgoyal.net/kitty/)
-- [Wezterm](https://wezfurlong.org/wezterm/)
-- [Alacritty](https://github.com/alacritty/alacritty)
-
-本人使用 Kitty:
+4. hypr
 
 ```bash
-yay -S kitty
+yay -S dunst hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git swappy cliphist
 ```
 
-### bash
-
-使用`./stow.sh`来应用 bash 环境变量，其中主题和 git 插件来自[oh my bash](https://github.com/ohmybash/oh-my-bash)。
-
-### zsh
-
-安装 zsh:
+5. dependency
 
 ```bash
-yay -S zsh
+yay -S polkit-kde-agent xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel imagemagick qt5-imageformats ffmpegthumbs kde-cli-tools brightnessctl pavucontrol pamixer
 ```
 
-安装插件:
+6. theme
 
 ```bash
-yay -S zsh-theme-powerlevel10k zsh-syntax-highlighting zsh-autosuggestions
+yay -S nwg-look kvantum qt5ct
 ```
 
-或者使用 git:
+7. apps
 
 ```bash
-mkdir -p ~/.zsh/plugins
-cd ~/.zsh/plugins
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
-git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git
-git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git
+yay -S firefox kitty neofetch dolphin neovim ark
 ```
+
+## 初始化
+
+1. 安装上面所有的包。
+2. 运行`./init.sh`脚本，它会初始化环境变量并且释放资源。
+3. 如果在运行过程中发现在家目录有冲突文件，请手动删除它。
+
+## 运行
+
+在 tty 中执行`startde w`。
 
 ## 编辑器 (Neovim)
 
@@ -98,7 +171,7 @@ yay -S python fnm
 python -m venv ~/.python_venv
 ```
 
-重启终端以应用`python`的环境变量，参考：`shell_env/50-python-venv.sh`，此时可以使用`pip`，使用`./stow.sh`脚本会自动使用国内源：
+重启终端以应用`python`的环境变量，此时可以使用`pip`，使用`./stow.sh`脚本会自动使用国内源：
 
 ```bash
 ./stow.sh
@@ -113,7 +186,7 @@ fnm install <version/--latest> --node-dist-mirror=https://npmmirror.com/mirrors/
 fnm default <version>
 ```
 
-重启终端以应用`fnm`的环境变量，参考：`shell_env/fnm.sh`。
+重启终端以应用`fnm`的环境变量。
 
 安装完`nodejs`和`npm`后，再次更新配置，会自动使用国内源：
 
@@ -145,86 +218,6 @@ git submodule init && git submodule update
 cd nvim && git switch v2.0
 ```
 
-## 浏览器
+## Thanks to
 
-firefox:
-
-```bash
-yay -S firefox
-```
-
-edge:
-
-```bash
-yay -S microsoft-edge-stable-bin
-```
-
-在 wayland 环境下:
-
-```bash
---enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime
-```
-
-代理:
-
-```bash
---proxy-server="http://127.0.0.1:7890"
-```
-
-添加上面的标签到 desktop 文件中：
-
-```bash
-sudo vim /usr/share/applications/microsoft-edge.desktop
-```
-
-## 字体
-
-安装包：
-
-```bash
-yay -S ttf-maple-nerd ttf-maple-sc-nerd ttf-firacode-nerd
-```
-
-若`ttf-maple-sc-nerd`包无法安装时，使用下面方法进行安装：
-
-1. 使用 [Maple-font](https://github.com/subframe7536/Maple-font)
-2. 到 [release](https://github.com/subframe7536/Maple-font/releases) 页面, 并且下载 **MapleMono-SC-NF.zip**.
-3. 解压文件：
-   ```
-   unzip MapleMono-SC-NF.zip
-   ```
-4. 移动 ttf 文件到 fonts 目录:
-   ```
-   sudo mv SC-NF/*.ttf /usr/share/fonts/TTF/
-   ```
-5. 刷新字体缓存:
-   ```
-   fc-cache -vf
-   ```
-
-## 工具
-
-```bash
-yay -S eza bat rsync htop
-```
-
-- [eza] 代替 ls and tree
-- [bat] 代替 cat
-- [rsync] 代替 cp and scp
-- [htop] 代替 top
-
-## 配置管理
-
-```bash
-yay -S stow
-```
-
-可以使用下面的脚本将配置文件软链到用户目录：
-
-```bash
-./stow.sh
-```
-
-> 如果删除了某个包，可以再次运行该脚本，将会删除该包的软链！
-
-使用`startde`来启动桌面环境，也可以取消`bash/.bash_profile`(默认取消注释)或`zsh/.zprofile`中的注释来自动启动桌面环境。
+1. [hyprdots](https://github.com/prasanthrangan/hyprdots)：主题来源于这里！
