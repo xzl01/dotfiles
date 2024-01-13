@@ -76,6 +76,7 @@ done
 # use ln for command config, add ["command"]="target path"
 dict=(
 	["cargo"]="${HOME}/.cargo"
+	["linuxqq"]="${HOME}/.config"
 )
 for key in $(echo "${!dict[*]}"); do
 	value=${dict[$key]}
