@@ -77,3 +77,13 @@ symbol = " "
 
 [nodejs]
 symbol = " "
+
+[golang]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[c]
+symbol = " "
+
