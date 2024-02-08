@@ -76,7 +76,6 @@ done
 # use ln for command config, add ["command"]="target path"
 dict=(
 	["cargo"]="${HOME}/.cargo"
-	["linuxqq"]="${HOME}/.config"
 )
 for key in $(echo "${!dict[*]}"); do
 	value=${dict[$key]}
@@ -91,10 +90,6 @@ done
 # use ln for dir config, add ["dir"]="target path"
 dict=(
 	["gtk2"]="${HOME}"
-	["system_icon"]="${HOME}/.icons/default/"
-	["dolphin_share"]="${HOME}/.local/share/dolphin"
-	["kxmlgui5_share"]="${HOME}/.local/share/kxmlgui5"
-	["dolphin_config"]="${HOME}/.config"
 )
 for target in $(echo "${!dict[*]}"); do
 	value=${dict[$target]}

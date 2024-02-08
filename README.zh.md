@@ -140,7 +140,7 @@ yay -S blueman qt5-wayland qt6-wayland
 4. hypr
 
 ```bash
-yay -S dunst hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git swappy cliphist
+yay -S dunst hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git wl-clipboard
 ```
 
 5. dependency
@@ -158,7 +158,7 @@ yay -S nwg-look kvantum qt5ct
 7. apps
 
 ```bash
-yay -S firefox kitty neofetch dolphin neovim ark fcitx5
+yay -S firefox kitty neofetch neovim fcitx5
 ```
 
 ## 初始化
