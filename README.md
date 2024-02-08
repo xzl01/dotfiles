@@ -152,7 +152,7 @@ yay -S polkit-kde-agent xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel
 6. theme
 
 ```bash
-yay -S nwg-look kvantum qt5ct qt6ct
+yay -S nwg-look kvantum qt5ct qt6ct candy-icons-git
 ```
 
 7. apps
