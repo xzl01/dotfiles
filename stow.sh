@@ -25,6 +25,7 @@ dict=(
 	["waybar"]="waybar"
 	["swww"]="swww"
 	["qt5ct"]="qt5ct"
+	["qt6ct"]="qt6ct"
 	["rofi"]="rofi"
 	["nwg-look"]="nwg-look"
 	["kvantummanager"]="Kvantum"

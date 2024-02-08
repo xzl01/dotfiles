@@ -23,14 +23,6 @@ themes=(
 	"Material-Sakura"
 	"Rose-Pine"
 	"Tokyo-Night"
-	"TelaBlack"
-	"TelaBlue"
-	"TelaDracula"
-	"TelaGreen"
-	"TelaGrey"
-	"TelaPink"
-	"TelaPurple"
-	"TelaYellow"
 )
 
 # extract arcs
