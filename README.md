@@ -152,7 +152,7 @@ yay -S polkit-kde-agent xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel
 6. theme
 
 ```bash
-yay -S nwg-look kvantum qt5ct
+yay -S nwg-look kvantum qt5ct qt6ct
 ```
 
 7. apps
@@ -219,7 +219,7 @@ git submodule init && git submodule update
 ```
 
 ```bash
-cd nvim && git switch v2.0
+cd nvim && git switch v3.0
 ```
 
 ## Thanks to
