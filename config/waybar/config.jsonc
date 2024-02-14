@@ -78,15 +78,14 @@
       "max-length": 1000,
     },
     "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "󰥔",
-            "deactivated": ""
-        }
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "󰥔 ",
+        "deactivated": " "
+      }
     },
-
     "clock": {
-      "format": "{:%I:%M %p}",
+      "format": "{:%R}",
       "format-alt": "{:%R 󰃭 %y·%m·%d}",
       "tooltip-format": "<tt>{calendar}</tt>",
       "calendar": {
