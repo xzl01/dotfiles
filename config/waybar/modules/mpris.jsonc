@@ -3,10 +3,10 @@
       "format-paused": "{status_icon} <i>{dynamic}</i>",
       "player-icons": {
         "default": "▶",
-        "mpv": "🎵"
+        "mpv": ""
       },
       "status-icons": {
-        "paused": "⏸"
+        "paused": "󰏤"
       },
       // "ignored-players": ["firefox"]
       "max-length": 1000,
