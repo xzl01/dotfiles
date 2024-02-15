@@ -158,7 +158,7 @@ yay -S nwg-look kvantum qt5ct qt6ct candy-icons-git
 7. apps
 
 ```bash
-yay -S firefox kitty neofetch neovim fcitx5
+yay -S firefox kitty neofetch neovim fcitx5 overskride
 ```
 
 ## 初始化
