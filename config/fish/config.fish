@@ -50,7 +50,7 @@ function deepin-env-off
 end
 
 # cargo env
-if command -s cargo > /dev/null
+if command -s cargo > /dev/null || test -d $HOME/.cargo/bin/ 
   set PATH $HOME/.cargo/bin $PATH
 end
 
@@ -92,7 +92,7 @@ end
 
 # pythen venv
 set -l venv_path $HOME/.python_venv/bin
-test -d $venv_path  && source $venv_path/activate.fish
+test -d $venv_path && source $venv_path/activate.fish
 
 # freerdp
 if command -s wlfreerdp > /dev/null
