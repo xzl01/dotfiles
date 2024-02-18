@@ -134,19 +134,19 @@ yay -S ttf-firacode-nerd ttf-maple-sc-nerd
 3. utils
 
 ```bash
-yay -S blueman qt5-wayland qt6-wayland
+yay -S qt5-wayland qt6-wayland
 ```
 
 4. hypr
 
 ```bash
-yay -S dunst hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git wl-clipboard
+yay -S dunst hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git wl-clipboard pipewire-pulse
 ```
 
 5. dependency
 
 ```bash
-yay -S polkit-kde-agent xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel imagemagick qt5-imageformats ffmpegthumbs kde-cli-tools brightnessctl pavucontrol pamixer
+yay -S polkit-kde-agent xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel imagemagick qt5-imageformats ffmpegthumbs brightnessctl pavucontrol pamixer
 ```
 
 6. theme
@@ -158,7 +158,7 @@ yay -S nwg-look kvantum qt5ct qt6ct candy-icons-git
 7. apps
 
 ```bash
-yay -S firefox kitty neofetch neovim fcitx5 overskride
+yay -S firefox kitty neofetch neovim fcitx5
 ```
 
 ## Init
