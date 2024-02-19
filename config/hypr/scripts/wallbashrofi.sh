@@ -2,15 +2,14 @@
 
 # set variables
 
-ScrDir=`dirname "$(realpath "$0")"`
+ScrDir=$(dirname "$(realpath "$0")")
 source $ScrDir/globalcontrol.sh
 rofThm="${XDG_CONFIG_HOME:-$HOME/.config}/rofi/themes"
 
 # regen color conf
 
-if [ "$EnableWallDcol" -ne 1 ] ; then
-    cp ${rofThm}/${gtkTheme}.rasi ${rofThm}/theme.rasi
+if [ "$EnableWallDcol" -ne 1 ]; then
+	cp ${rofThm}/${gtkTheme}.rasi ${rofThm}/theme.rasi
 else
-    cp ${rofThm}/Wall-Dcol.rasi ${rofThm}/theme.rasi
+	cp ${rofThm}/Wall-Dcol.rasi ${rofThm}/theme.rasi
 fi
-

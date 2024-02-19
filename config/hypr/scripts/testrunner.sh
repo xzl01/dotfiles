@@ -67,11 +67,6 @@ do
         sleep 0.7
         pkill -x rofi
 
-        # cliphist
-        $ScrDir/cliphist.sh w &> /dev/null &
-        sleep 0.7
-        pkill -x rofi
-
         # wallselect
         $ScrDir/swwwallselect.sh &> /dev/null &
         sleep 0.7

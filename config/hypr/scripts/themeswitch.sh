@@ -114,10 +114,6 @@ flatpak --user override --env=GTK_THEME="${ThemeSet}"
 flatpak --user override --env=ICON_THEME="${IconSet}"
 
 
-# rofi
-ln -fs $ConfDir/rofi/themes/${ThemeSet}.rasi $ConfDir/rofi/themes/theme.rasi
-
-
 # waybar
 ln -fs $ConfDir/waybar/themes/${ThemeSet}.css $ConfDir/waybar/themes/theme.css
 killall waybar && waybar &
