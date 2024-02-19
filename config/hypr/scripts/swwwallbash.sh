@@ -122,3 +122,9 @@ export -f fn_wallbash
 # exec wallbash fn in parallel
 
 find "$dcoDir" -type f -name "*.dcol" | parallel -j 0 fn_wallbash
+
+grep -m 1 '.' $dcoDir/*.dcol | awk -F '|' '{print $2}' | while read wallbash; do
+	if [ ! -z "$wallbash" ]; then
+		eval "${wallbash}"
+	fi
+done
