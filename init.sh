@@ -1,8 +1,12 @@
 #!/bin/bash
 
-./stow.sh
-
 cd scripts/
 
 ./create_cache.sh
-./themepatcher.sh
+./sources_extacter.sh
+
+cd ..
+./stow.sh
+
+cd scripts/
+./default_setting.sh
