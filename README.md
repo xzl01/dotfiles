@@ -146,7 +146,7 @@ yay -S dunst hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogou
 5. dependency
 
 ```bash
-yay -S polkit-kde-agent xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel imagemagick qt5-imageformats ffmpegthumbs brightnessctl pavucontrol pamixer
+yay -S polkit-kde-agent xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel imagemagick qt5-imageformats ffmpegthumbs brightnessctl pavucontrol pamixer pacman-contrib
 ```
 
 6. theme
