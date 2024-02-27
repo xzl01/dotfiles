@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+lockFile="/tmp/hyrpdots$(id -u)swwwallpaper.lock"
+[ -e "$lockFile" ] && echo "An instance of the script is already running..." && exit 1
+touch "${lockFile}"
+trap 'rm -f ${lockFile}' EXIT
+
 # define functions
 
 Wall_Update() {
@@ -96,7 +101,7 @@ fi
 
 # evaluate options
 
-while getopts "nps" option; do
+while getopts "nps:" option; do
 	case $option in
 	n) # set next wallpaper
 		xtrans="grow"
@@ -108,8 +113,8 @@ while getopts "nps" option; do
 		;;
 	s) # set input wallpaper
 		shift $((OPTIND - 1))
-		if [ -f "$1" ]; then
-			Wall_Update "$1"
+		if [ -f "$OPTARG" ]; then
+			Wall_Update "$OPTARG"
 		fi
 		;;
 	*) # invalid option

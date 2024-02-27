@@ -12,13 +12,19 @@ maxfreq=$(lscpu | grep "CPU max MHz" | awk -F: '{ print $2}' | sed -e 's/ //g' -
 frequency=$(echo $freqlist | tr ' ' '\n' | awk "{ sum+=\$1 } END {printf \"%.0f/$maxfreq MHz\", sum/NR}")
 
 # CPU temp
-temp=$(sensors | grep "Package id 0" | awk -F '[+.]' '{print $2}')
+temp=$(sensors | awk '/Package id 0/ {print $4}' | awk -F '[+.]' '{print $2}')
+if [ -z "$temp" ]; then
+	temp=$(sensors | awk '/Tctl/ {print $2}' | tr -d '+°C')
+fi
+if [ -z "$temp" ]; then
+	temp="N/A"
+fi
 
 # map icons
 set_ico="{\"thermo\":{\"0\":\"\",\"45\":\"\",\"65\":\"\",\"85\":\"\"},\"emoji\":{\"0\":\"❄\",\"45\":\"☁\",\"65\":\"\",\"85\":\"\"},\"util\":{\"0\":\"󰾆\",\"30\":\"󰾅\",\"60\":\"󰓅\",\"90\":\"\"}}"
 eval_ico() {
-    map_ico=$(echo "${set_ico}" | jq -r --arg aky "$1" --argjson avl "$2" '.[$aky] | keys_unsorted | map(tonumber) | map(select(. <= $avl)) | max')
-    echo "${set_ico}" | jq -r --arg aky "$1" --arg avl "$map_ico" '.[$aky] | .[$avl]'
+	map_ico=$(echo "${set_ico}" | jq -r --arg aky "$1" --argjson avl "$2" '.[$aky] | keys_unsorted | map(tonumber) | map(select(. <= $avl)) | max')
+	echo "${set_ico}" | jq -r --arg aky "$1" --arg avl "$map_ico" '.[$aky] | .[$avl]'
 }
 
 thermo=$(eval_ico thermo $temp)
