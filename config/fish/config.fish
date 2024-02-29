@@ -97,7 +97,7 @@ test -d $venv_path && source $venv_path/activate.fish
 # freerdp
 if command -s wlfreerdp > /dev/null
   function wlrdp
-		wlfreerdp +compression +clipboard -themes -wallpaper /gdi:hw /microphone:sys:alsa /sound:sys:alsa /drive:Downloads,$HOME/Downloads $argv /dynamic-resolution
+		wlfreerdp +compression +clipboard -themes -wallpaper /gdi:hw /drive:Downloads,$HOME/Downloads $argv /dynamic-resolution
   end
 end
 
