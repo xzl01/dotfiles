@@ -140,7 +140,7 @@ yay -S qt5-wayland qt6-wayland
 4. hypr
 
 ```bash
-yay -S dunst hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git wl-clipboard pipewire-pulse
+yay -S dunst hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git wl-clipboard pipewire-pulse swappy
 ```
 
 5. dependency
