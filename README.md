@@ -209,7 +209,7 @@ npm i -g neovim
 Default use git ssh, if you use http, modify `.gitmodules`, set `url`:
 
 ```
-https://github.com/Groveer/NvChad.git
+https://github.com/NvChad/NvChad.git
 ```
 
 Update git submodule:
@@ -219,7 +219,7 @@ git submodule init && git submodule update
 ```
 
 ```bash
-cd nvim && git switch v3.0
+cd config/nvim/lua && git clone https://github.com/Groveer/nvchad-config.git custom
 ```
 
 ## Thanks to
