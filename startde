@@ -18,10 +18,6 @@ fi
 
 if [ $1 = "w" ]; then
 
-	if [ -x /usr/bin/startplasma-wayland ]; then
-		exec startplasma-wayland
-	fi
-
 	if [ -x /usr/bin/Hyprland ]; then
 		exec Hyprland
 	fi
