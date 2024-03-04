@@ -161,6 +161,12 @@ yay -S nwg-look kvantum qt5ct qt6ct candy-icons-git
 yay -S firefox kitty neofetch neovim fcitx5
 ```
 
+8. others
+
+```bash
+pip install hyprshade
+```
+
 ## 初始化
 
 1. 安装上面所有的包。

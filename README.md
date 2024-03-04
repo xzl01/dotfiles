@@ -161,6 +161,12 @@ yay -S nwg-look kvantum qt5ct qt6ct candy-icons-git
 yay -S firefox kitty neofetch neovim fcitx5
 ```
 
+8. others
+
+```bash
+pip install hyprshade
+```
+
 ## Init
 
 1. Install all packages

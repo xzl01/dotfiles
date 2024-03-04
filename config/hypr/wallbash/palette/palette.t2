@@ -1,3 +1,4 @@
+$HOME/.config/hypr/wallbash/palette/palette.svg
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
@@ -39,7 +40,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#1D202E;fill-opacity:1;stroke:#E2DFD1;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_pry0>;fill-opacity:1;stroke:#<wallbash_txt0>;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect1"
        width="19.726093"
        height="19.726093"
@@ -48,7 +49,7 @@
        ry="6.0140514"
        inkscape:label="rect.1" />
     <rect
-       style="fill:#373F4E;fill-opacity:1;stroke:#C8C0B1;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_pry1>;fill-opacity:1;stroke:#<wallbash_txt1>;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect2"
        width="19.726093"
        height="19.726093"
@@ -57,7 +58,7 @@
        ry="6.0140514"
        inkscape:label="rect.2" />
     <rect
-       style="fill:#AD584F;fill-opacity:1;stroke:#52A7B0;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_pry2>;fill-opacity:1;stroke:#<wallbash_txt2>;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect3"
        width="19.726093"
        height="19.726093"
@@ -66,7 +67,7 @@
        ry="6.0140514"
        inkscape:label="rect.3" />
     <rect
-       style="fill:#22232A;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_0xa1>;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect4"
        width="19.726093"
        height="19.726093"
@@ -75,7 +76,7 @@
        ry="9.8630466"
        inkscape:label="circ1.1" />
     <rect
-       style="fill:#242733;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_0xa2>;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect5"
        width="19.726093"
        height="19.726093"
@@ -84,7 +85,7 @@
        ry="9.8630466"
        inkscape:label="circ1.2" />
     <rect
-       style="fill:#262A3D;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_0xa3>;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect6"
        width="19.726093"
        height="19.726093"
@@ -93,7 +94,7 @@
        ry="9.8630466"
        inkscape:label="circ1.3" />
     <rect
-       style="fill:#262C48;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_0xa4>;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect7"
        width="19.726093"
        height="19.726093"
@@ -102,7 +103,7 @@
        ry="9.8630466"
        inkscape:label="circ1.4" />
     <rect
-       style="fill:#3E4248;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_1xa1>;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect8"
        width="19.726093"
        height="19.726093"
@@ -111,7 +112,7 @@
        ry="9.8630466"
        inkscape:label="circ2.1" />
     <rect
-       style="fill:#444B57;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_1xa2>;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect9"
        width="19.726093"
        height="19.726093"
@@ -120,7 +121,7 @@
        ry="9.8630466"
        inkscape:label="circ2.2" />
     <rect
-       style="fill:#495467;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_1xa3>;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect10"
        width="19.726093"
        height="19.726093"
@@ -129,7 +130,7 @@
        ry="9.8630466"
        inkscape:label="circ2.3" />
     <rect
-       style="fill:#4D5C78;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_1xa4>;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect11"
        width="19.726093"
        height="19.726093"
@@ -138,7 +139,7 @@
        ry="9.8630466"
        inkscape:label="circ2.4" />
     <rect
-       style="fill:#312A29;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_2xa1>;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect12"
        width="19.726093"
        height="19.726093"
@@ -147,7 +148,7 @@
        ry="9.8630466"
        inkscape:label="circ3.1" />
     <rect
-       style="fill:#3F2C2A;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_2xa2>;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect13"
        width="19.726093"
        height="19.726093"
@@ -156,7 +157,7 @@
        ry="9.8630466"
        inkscape:label="circ3.2" />
     <rect
-       style="fill:#502E2A;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_2xa3>;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect14"
        width="19.726093"
        height="19.726093"
@@ -165,7 +166,7 @@
        ry="9.8630466"
        inkscape:label="circ3.3" />
     <rect
-       style="fill:#622D28;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       style="fill:#<wallbash_2xa4>;fill-opacity:1;stroke:none;stroke-width:2.64583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect15"
        width="19.726093"
        height="19.726093"
