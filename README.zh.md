@@ -140,7 +140,7 @@ yay -S qt5-wayland qt6-wayland
 4. hypr
 
 ```bash
-yay -S dunst hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git wl-clipboard pipewire-pulse swappy
+yay -S dunst libbotify hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git wl-clipboard pipewire-pulse swappy
 ```
 
 5. dependency
@@ -191,7 +191,16 @@ yay -S python fnm
 python -m venv ~/.python_venv
 ```
 
-重启终端以应用`python`的环境变量，此时可以使用`pip`，使用`./stow.sh`脚本会自动使用国内源：
+```bash
+fnm install <version/--latest> --node-dist-mirror=https://npmmirror.com/mirrors/node
+fnm default <version>
+```
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup sh
+```
+
+重启终端以应用的环境变量，使用`./stow.sh`脚本会自动使用国内源：
 
 ```bash
 ./stow.sh
@@ -199,19 +208,6 @@ python -m venv ~/.python_venv
 
 ```bash
 pip install pynvim
-```
-
-```bash
-fnm install <version/--latest> --node-dist-mirror=https://npmmirror.com/mirrors/node
-fnm default <version>
-```
-
-重启终端以应用`fnm`的环境变量。
-
-安装完`nodejs`和`npm`后，再次更新配置，会自动使用国内源：
-
-```bash
-./stow.sh
 ```
 
 ```bash
@@ -225,7 +221,7 @@ npm i -g neovim
 更新 git 子模块:
 
 ```bash
-git submodule init && git submodule update
+git submodule update --init
 ```
 
 ```bash

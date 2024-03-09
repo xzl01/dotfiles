@@ -140,7 +140,7 @@ yay -S qt5-wayland qt6-wayland
 4. hypr
 
 ```bash
-yay -S dunst hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git wl-clipboard pipewire-pulse swappy
+yay -S dunst libbotify hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git wl-clipboard pipewire-pulse swappy
 ```
 
 5. dependency
@@ -191,18 +191,20 @@ yay -S python fnm
 python -m venv ~/.python_venv
 ```
 
-Restart Terminal for apply python environment, then you can use `pip` command.
-
-```bash
-pip install pynvim
-```
-
 ```bash
 fnm install <version/--latest>
 fnm default <version>
 ```
 
-Restart terminal for apply fnm environment.
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Restart terminal for apply environment.
+
+```bash
+pip install pynvim
+```
 
 ```bash
 npm i -g neovim
@@ -221,7 +223,7 @@ https://github.com/NvChad/NvChad.git
 Update git submodule:
 
 ```bash
-git submodule init && git submodule update
+git submodule update --init
 ```
 
 ```bash
