@@ -218,14 +218,16 @@ npm i -g neovim
 
 ### 安装 neovim 配置
 
+默认使用 ssh 协议，如果使用 http 协议，需要修改`.gitmodules`文件，设置`url`为:
+
+```
+https://github.com/groveer/nvchad-starter.git
+```
+
 更新 git 子模块:
 
 ```bash
 git submodule update --init
-```
-
-```bash
-cd config/nvim/lua && git clone https://github.com/Groveer/nvchad-config.git custom
 ```
 
 ## Thanks to

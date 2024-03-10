@@ -214,20 +214,16 @@ npm i -g neovim
 
 ### install neovim config
 
-Default use git ssh, if you use http, modify `.gitmodules`, set `url`:
+default use git ssh, if you use http, modify `.gitmodules`, set `url`:
 
 ```
-https://github.com/NvChad/NvChad.git
+https://github.com/groveer/nvchad-starter.git
 ```
 
 Update git submodule:
 
 ```bash
 git submodule update --init
-```
-
-```bash
-cd config/nvim/lua && git clone https://github.com/Groveer/nvchad-config.git custom
 ```
 
 ## Thanks to
