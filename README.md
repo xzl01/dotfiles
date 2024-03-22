@@ -146,7 +146,7 @@ yay -S dunst libbotify hyprland rofi-lbonn-wayland waybar swww swaylock-effects-
 5. dependency
 
 ```bash
-yay -S polkit-kde-agent xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel imagemagick qt5-imageformats ffmpegthumbs brightnessctl pavucontrol pamixer pacman-contrib
+yay -S polkit-kde-agent xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel imagemagick qt5-imageformats brightnessctl pavucontrol pamixer pacman-contrib
 ```
 
 6. theme
@@ -158,7 +158,7 @@ yay -S nwg-look kvantum qt5ct qt6ct candy-icons-git
 7. apps
 
 ```bash
-yay -S firefox kitty neofetch neovim fcitx5
+yay -S google-chrome kitty neofetch neovim fcitx5
 ```
 
 8. others
