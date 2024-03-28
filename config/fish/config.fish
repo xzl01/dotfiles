@@ -95,9 +95,9 @@ set -l venv_path $HOME/.python_venv/bin
 test -d $venv_path && source $venv_path/activate.fish
 
 # freerdp
-if command -s wlfreerdp > /dev/null
+if command -s wlfreerdp3 > /dev/null
   function wlrdp
-		wlfreerdp +compression +clipboard -themes -wallpaper /gdi:hw /drive:Downloads,$HOME/Downloads $argv /dynamic-resolution
+		wlfreerdp3 +compression +clipboard -themes -wallpaper -grab-keyboard /gdi:hw /drive:Downloads,$HOME/Downloads $argv /dynamic-resolution
   end
 end
 
