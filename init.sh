@@ -6,7 +6,7 @@ cd scripts/
 ./sources_extacter.sh
 
 cd ..
-./stow.sh
+./config.sh install
 
 cd scripts/
 ./default_setting.sh
