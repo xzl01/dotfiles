@@ -2,7 +2,7 @@
     main-bg:            #231028E6;
     main-fg:            #637AA6;
     main-br:            #2C3255;
-    main-ex:            #333240;
-    select-bg:          #48285F;
+    main-ex:            #383C4A;
+    select-bg:          #375688;
     select-fg:          #DCEFD7;
 }
