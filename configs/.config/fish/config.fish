@@ -21,6 +21,9 @@ end
 if command -s nvim > /dev/null
   set -x EDITOR nvim
 end
+if command -s neovide > /dev/null
+  abbr -a nvim neovide
+end
 if command -s eza > /dev/null
   abbr -a ls eza --icons=auto
   abbr -a l eza -al --icons=auto
