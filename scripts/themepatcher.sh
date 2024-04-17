@@ -171,6 +171,6 @@ done <<< "${wallpapers}"
 echo -en "${restore_list}" > "${Theme_Dir}/restore_cfg.lst"
 print_prompt -g "\n[exec] " "restore_cfg.sh \"${Theme_Dir}/restore_cfg.lst\" \"${Theme_Dir}/Configs\" \"${Fav_Theme}\"\n"
 "${scrDir}/restore_cfg.sh" "${Theme_Dir}/restore_cfg.lst" "${Theme_Dir}/Configs" "${Fav_Theme}" &> /dev/null
-[ "${3}" == "--skipcaching" ] || "$HOME/.local/share/bin/swwwallcache.sh" -t "${Fav_Theme}"
+[ "${3}" == "--skipcaching" ] || "$HOME/.local/bin/swwwallcache.sh" -t "${Fav_Theme}"
 
 exit 0
