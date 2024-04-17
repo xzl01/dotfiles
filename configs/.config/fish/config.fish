@@ -14,6 +14,11 @@ end
 
 # base env
 set PATH ~/.local/bin $PATH
+# Always mkdir a path (this doesn't inhibit functionality to make a single dir)
+abbr -a mkdir mkdir -p
+
+# Fixes "Error opening terminal: xterm-kitty" when using the default kitty term to open some programs through ssh
+abbr -a ssh kitten ssh
 
 if command -s vim > /dev/null
   set -x EDITOR vim

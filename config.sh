@@ -9,7 +9,9 @@ declare -A dict
 dict=(
 	# desktop environment
 	[hypr]=Hyprland
-	[startde]=Hyprland
+	[local]=Hyprland
+	[libinput]=Hyprland
+	[MangoHud]=mangohud
 	[swaylock]=swaylock
 	[dunst]=dunst
 	[wlogout]=wlogout
@@ -42,9 +44,6 @@ get_dir() {
 		path="$1/$element"
 		home_path=${path/"$cur_path/configs"/"$HOME"}
 		if [[ $path =~ ".config/" ]] || [ -f $path ]; then
-			if [[ $path =~ "hypr" ]] && [ -f $path ]; then
-				continue
-			fi
       parent_path=$(dirname $home_path)
       [ ! -d $parent_path ] && mkdir -p $parent_path && echo mkdir -p $parent_path done!
       [ -d $path ] && [ -d $home_path ] && rm -rf $home_path && rm -rf $home_path done!
