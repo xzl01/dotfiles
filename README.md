@@ -122,7 +122,7 @@ English | [中文](README.zh.md)
 1. shell
 
 ```bash
-yay -S eza fish rsync bat stow starship htop
+yay -S eza fish rsync bat starship htop
 ```
 
 2. fonts
@@ -140,19 +140,19 @@ yay -S qt5-wayland qt6-wayland
 4. hypr
 
 ```bash
-yay -S dunst libbotify hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git wl-clipboard pipewire-pulse swappy
+yay -S dunst libbotify hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git cliphist pipewire-pulse swappy hyde-cli-git
 ```
 
 5. dependency
 
 ```bash
-yay -S polkit-kde-agent xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel imagemagick qt5-imageformats brightnessctl pavucontrol pamixer pacman-contrib
+yay -S polkit-gnome xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel imagemagick qt5-imageformats brightnessctl pavucontrol pamixer pacman-contrib
 ```
 
 6. theme
 
 ```bash
-yay -S nwg-look kvantum qt5ct qt6ct candy-icons-git
+yay -S nwg-look kvantum qt5ct qt6ct
 ```
 
 7. apps
@@ -171,11 +171,15 @@ pip install hyprshade
 
 1. Install all packages
 2. Run `./init.sh`, it will initialize env and patch sources.
-3. If there is a conflicting file, delete it manually. run `./stow.sh`
+3. If there is a conflicting file, delete it manually. run `./config.sh install`
 
 ## Run
 
 run `startde w` in tty.
+
+## Uninstall
+
+It is easy to rm the symbol, just run `./config.sh uninstall`
 
 ## Editor/IDE (Neovim)
 

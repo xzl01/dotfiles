@@ -122,7 +122,7 @@
 1. shell
 
 ```bash
-yay -S eza fish rsync bat stow starship htop
+yay -S eza fish rsync bat starship htop
 ```
 
 2. fonts
@@ -140,19 +140,19 @@ yay -S qt5-wayland qt6-wayland
 4. hypr
 
 ```bash
-yay -S dunst libbotify hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git wl-clipboard pipewire-pulse swappy
+yay -S dunst libbotify hyprland rofi-lbonn-wayland waybar swww swaylock-effects-git wlogout grimblast-git wl-clipboard pipewire-pulse swappy hyde-cli-git
 ```
 
 5. dependency
 
 ```bash
-yay -S polkit-kde-agent xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel imagemagick qt5-imageformats brightnessctl pavucontrol pamixer pacman-contrib
+yay -S polkit-gnome xdg-desktop-portal-hyprland python-pyamdgpuinfo parallel imagemagick qt5-imageformats brightnessctl pavucontrol pamixer pacman-contrib
 ```
 
 6. theme
 
 ```bash
-yay -S nwg-look kvantum qt5ct qt6ct candy-icons-git
+yay -S nwg-look kvantum qt5ct qt6ct
 ```
 
 7. apps
@@ -171,11 +171,15 @@ pip install hyprshade
 
 1. 安装上面所有的包。
 2. 运行`./init.sh`脚本，它会初始化环境变量并且释放资源。
-3. 如果在运行过程中发现在家目录有冲突文件，请手动删除它。
+3. 如果在运行过程中发现在家目录有冲突文件，请手动删除它，然后运行：`./config.sh install`。
 
 ## 运行
 
 在 tty 中执行`startde w`。
+
+## 卸载
+
+非常简单的删除初始化过程中创建的符号，只需要运行：`./config.sh uninstall`。
 
 ## 编辑器 (Neovim)
 
