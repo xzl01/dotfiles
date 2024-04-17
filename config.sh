@@ -13,6 +13,7 @@ dict=(
 	[libinput]=Hyprland
 	[MangoHud]=mangohud
 	[swaylock]=swaylock
+	[hyde]=Hyde
 	[dunst]=dunst
 	[wlogout]=wlogout
 	[waybar]=waybar
