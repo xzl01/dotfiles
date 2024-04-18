@@ -27,6 +27,7 @@ dict=(
 	[Kvantum]=kvantummanager
 	# tools
 	[nvim]=nvim
+	[editorconfig]=nvim
 	[fcitx5]=fcitx5
 	[alacritty]=alacritty
 	[mpv]=mpv
