@@ -84,6 +84,14 @@ pip install hyprshade
 
 在 tty 中执行`startde w`。
 
+## 更新
+
+```bash
+./config.sh uninstall
+git pull --rebase
+./config.sh install
+```
+
 ## 卸载
 
 非常简单的删除初始化过程中创建的符号，只需要运行：`./config.sh uninstall`。

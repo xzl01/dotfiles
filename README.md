@@ -83,6 +83,14 @@ pip install hyprshade
 
 run `startde w` in tty.
 
+## Update
+
+```bash
+./config.sh uninstall
+git pull --rebase
+./config.sh install
+```
+
 ## Uninstall
 
 It is easy to rm the symbol, just run `./config.sh uninstall`
