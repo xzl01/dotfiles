@@ -17,9 +17,6 @@ set PATH ~/.local/bin $PATH
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 abbr -a mkdir mkdir -p
 
-# Fixes "Error opening terminal: xterm-kitty" when using the default kitty term to open some programs through ssh
-abbr -a ssh kitten ssh
-
 if command -s vim > /dev/null
   set -x EDITOR vim
 end
@@ -58,7 +55,7 @@ function deepin-env-off
 end
 
 # cargo env
-if command -s cargo > /dev/null || test -d $HOME/.cargo/bin/ 
+if command -s cargo > /dev/null || test -d $HOME/.cargo/bin/
   set PATH $HOME/.cargo/bin $PATH
 end
 
@@ -118,7 +115,7 @@ if command -s zoxide > /dev/null
 end
 
 # function fish_prompt
-#   set_color cyan; echo (pwd) 
+#   set_color cyan; echo (pwd)
 #   set_color green; echo '> '
 # end
 
