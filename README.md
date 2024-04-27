@@ -64,7 +64,7 @@ yay -S nwg-look kvantum qt5ct qt6ct
 7. apps
 
 ```bash
-yay -S google-chrome kitty neofetch neovim fcitx5
+yay -S google-chrome kitty fastfetch neovim fcitx5
 ```
 
 8. others
