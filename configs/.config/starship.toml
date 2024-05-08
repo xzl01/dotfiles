@@ -87,3 +87,5 @@ symbol = " "
 [c]
 symbol = " "
 
+[cmake]
+symbol = "󰔶 "
