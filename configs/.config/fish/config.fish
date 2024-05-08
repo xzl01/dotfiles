@@ -114,6 +114,9 @@ if command -s zoxide > /dev/null
   zoxide init fish | source
 end
 
+if test (tty) = "/dev/tty1" -a -z "$DISPLAY"
+    startde w
+end
 # function fish_prompt
 #   set_color cyan; echo (pwd)
 #   set_color green; echo '> '
