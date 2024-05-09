@@ -114,6 +114,11 @@ if command -s zoxide > /dev/null
   zoxide init fish | source
 end
 
+if status is-login
+    exec bash -c "test -e /etc/profile && source /etc/profile;\
+    exec fish"
+end
+
 if test (tty) = "/dev/tty1" -a -z "$DISPLAY"
     startde w
 end
